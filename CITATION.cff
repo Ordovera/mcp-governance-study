@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite the paper (Zenodo manuscript deposit) and the archived data deposit."
+title: "Measuring Agent Governance Posture: Accountability Gaps in MCP Servers and Implications for Single- and Multi-Agent Governance"
+authors:
+  - family-names: Fending
+    given-names: Brian
+    affiliation: Ordovera Advisory
+type: dataset
+license: CC-BY-4.0
+repository-code: "https://github.com/ordovera/mcp-governance-study"
+# DOI of the archived DATA deposit on Zenodo (separate from the paper deposit;
+# the code itself is GitHub-only and is not archived to Zenodo):
+doi: 10.5281/zenodo.XXXXXXXX
+version: "1.0.0"
+date-released: 2026-06-26
+preferred-citation:
+  type: article
+  title: "Measuring Agent Governance Posture: Accountability Gaps in MCP Servers and Implications for Single- and Multi-Agent Governance"
+  authors:
+    - family-names: Fending
+      given-names: Brian
+      affiliation: Ordovera Advisory
+  year: 2026
+  # DOI of the paper's Zenodo manuscript deposit (the citable paper):
+  doi: 10.5281/zenodo.PPPPPPPP
+  # Optional arXiv mirror identifier, if/when submitted:
+  notes: "arXiv:XXXX.XXXXX"

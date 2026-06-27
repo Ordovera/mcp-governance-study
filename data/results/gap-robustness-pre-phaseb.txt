@@ -1,0 +1,103 @@
+========================================================================
+GAP-PATTERN ROBUSTNESS CHECKS
+========================================================================
+Corpus: evidence_corpus_n1000.json
+N servers: 945
+Gap source: stored accountabilityGaps snapshot (pre-PhaseB if input is pre-PhaseB corpus)
+Distinct owner clusters: 845 (807 real, 38 singleton/unparseable)
+
+========================================================================
+1. CLUSTER-BOOTSTRAP 95% CI vs WILSON 95% CI
+========================================================================
+(Cluster resamples whole owners; Wilson assumes iid servers.)
+
+pattern                              count   prev     Wilson 95% CI    Cluster 95% CI
+-------------------------------------------------------------------------------------
+auth-without-actor-logging             303  32.1%   [ 29.2%, 35.1%]   [ 28.5%, 35.7%]
+global-auth-over-sensitive-tools       218  23.1%   [ 20.5%, 25.9%]   [ 20.1%, 26.2%]
+ungated-write                          152  16.1%   [ 13.9%, 18.6%]   [ 13.7%, 18.6%]
+destructive-without-audit-trail         71   7.5%   [  6.0%,  9.4%]   [  5.8%,  9.3%]
+sensitive-read-without-logging          46   4.9%   [  3.7%,  6.4%]   [  3.5%,  6.3%]
+logging-without-attribution             43   4.6%   [  3.4%,  6.1%]   [  3.3%,  5.9%]
+sensitive-read-without-auth              3   0.3%   [  0.1%,  0.9%]   [  0.0%,  0.7%]
+
+========================================================================
+2. OWNER CONCENTRATION PER GAP PATTERN
+========================================================================
+(Top-5 share answers: is the headline driven by one publisher?)
+(Gini: 0 = spread evenly across owners; ~1 = concentrated.)
+
+auth-without-actor-logging  (n=303 servers across 276 owners)
+  Top-5 share: 6.9%   Gini: 0.086
+    br0ski777                        6  (2.0% of auth-without-actor-logging)
+    srotzin                          5  (1.7% of auth-without-actor-logging)
+    wolfe-jam                        4  (1.3% of auth-without-actor-logging)
+    ansvar-systems                   3  (1.0% of auth-without-actor-logging)
+    j0hanz                           3  (1.0% of auth-without-actor-logging)
+
+global-auth-over-sensitive-tools  (n=218 servers across 205 owners)
+  Top-5 share: 6.9%   Gini: 0.058
+    wolfe-jam                        4  (1.8% of global-auth-over-sensitive-tools)
+    ansvar-systems                   3  (1.4% of global-auth-over-sensitive-tools)
+    srotzin                          3  (1.4% of global-auth-over-sensitive-tools)
+    j0hanz                           3  (1.4% of global-auth-over-sensitive-tools)
+    fr0ster                          2  (0.9% of global-auth-over-sensitive-tools)
+
+ungated-write  (n=152 servers across 139 owners)
+  Top-5 share: 9.9%   Gini: 0.082
+    daedalus                         4  (2.6% of ungated-write)
+    aiagentkarl                      3  (2.0% of ungated-write)
+    ansvar-systems                   3  (2.0% of ungated-write)
+    j0hanz                           3  (2.0% of ungated-write)
+    fr0ster                          2  (1.3% of ungated-write)
+
+destructive-without-audit-trail  (n=71 servers across 69 owners)
+  Top-5 share: 9.9%   Gini: 0.027
+    daedalus                         2  (2.8% of destructive-without-audit-trail)
+    fr0ster                          2  (2.8% of destructive-without-audit-trail)
+    philflowio                       1  (1.4% of destructive-without-audit-trail)
+    retrorobai                       1  (1.4% of destructive-without-audit-trail)
+    knorq-ai                         1  (1.4% of destructive-without-audit-trail)
+
+sensitive-read-without-logging  (n=46 servers across 45 owners)
+  Top-5 share: 13.0%   Gini: 0.021
+    fr0ster                          2  (4.3% of sensitive-read-without-logging)
+    markswendsen-code                1  (2.2% of sensitive-read-without-logging)
+    chrischall                       1  (2.2% of sensitive-read-without-logging)
+    shigechika                       1  (2.2% of sensitive-read-without-logging)
+    cammac-creator                   1  (2.2% of sensitive-read-without-logging)
+
+logging-without-attribution  (n=43 servers across 43 owners)
+  Top-5 share: 11.6%   Gini: 0.000
+    rog0x                            1  (2.3% of logging-without-attribution)
+    nicofains1                       1  (2.3% of logging-without-attribution)
+    7gugu                            1  (2.3% of logging-without-attribution)
+    solesius                         1  (2.3% of logging-without-attribution)
+    evilran                          1  (2.3% of logging-without-attribution)
+
+sensitive-read-without-auth  (n=3 servers across 3 owners)
+  Top-5 share: 100.0%   Gini: 0.000
+    mvtandas                         1  (33.3% of sensitive-read-without-auth)
+    aiagentkarl                      1  (33.3% of sensitive-read-without-auth)
+    aguantar                         1  (33.3% of sensitive-read-without-auth)
+
+========================================================================
+3. PATTERN CO-OCCURRENCE (Jaccard similarity of server sets)
+========================================================================
+(0 = patterns flag disjoint servers; 1 = identical sets.)
+
+                                    auth-without-a.. global-auth-ov..    ungated-write destructive-wi.. sensitive-read.. logging-withou.. sensitive-read..
+auth-without-actor-logging                      1.00             0.27             0.17             0.06             0.05             0.00             0.00
+global-auth-over-sensitive-tools                0.27             1.00             0.43             0.25             0.17             0.00             0.00
+ungated-write                                   0.17             0.43             1.00             0.23             0.12             0.04             0.01
+destructive-without-audit-trail                 0.06             0.25             0.23             1.00             0.19             0.02             0.01
+sensitive-read-without-logging                  0.05             0.17             0.12             0.19             1.00             0.00             0.07
+logging-without-attribution                     0.00             0.00             0.04             0.02             0.00             1.00             0.00
+sensitive-read-without-auth                     0.00             0.00             0.01             0.01             0.07             0.00             1.00
+
+Highest non-self Jaccard pairs (top 5):
+  J=0.43  global-auth-over-sensitive-tools ∩ ungated-write: 111 / 259
+  J=0.27  auth-without-actor-logging ∩ global-auth-over-sensitive-tools: 110 / 411
+  J=0.25  global-auth-over-sensitive-tools ∩ destructive-without-audit-trail: 57 / 232
+  J=0.23  ungated-write ∩ destructive-without-audit-trail: 42 / 181
+  J=0.19  destructive-without-audit-trail ∩ sensitive-read-without-logging: 19 / 98

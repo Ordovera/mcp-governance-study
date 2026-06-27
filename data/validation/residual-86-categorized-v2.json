@@ -1,0 +1,472 @@
+{
+  "categories": {
+    "variable_name_referenced": 3,
+    "cross_language_python_in_npm": 3,
+    "factory_pattern": 4,
+    "unknown_pattern": 59,
+    "go_only": 3,
+    "truly_dynamic_runtime": 6,
+    "xmcp_framework": 2,
+    "custom_compat_layer": 1,
+    "class_composition_fastmcp": 2,
+    "openapi_driven_disk": 1,
+    "class_subclass_fastmcp": 1,
+    "openapi_driven_runtime_network": 1
+  },
+  "detail": {
+    "variable_name_referenced": [
+      {
+        "name": "github.com/rog0x/mcp-git-tools",
+        "lang": "typescript",
+        "llm_tool_count": 5
+      },
+      {
+        "name": "github.com/benswel/qr-agent-core",
+        "lang": "typescript",
+        "llm_tool_count": 37
+      },
+      {
+        "name": "git+https://github.com/bthurlow/artificer-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 49
+      }
+    ],
+    "cross_language_python_in_npm": [
+      {
+        "name": "github.com/eutech-directory/legis-link-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 9
+      },
+      {
+        "name": "github.com/stahldavid/sensegrep",
+        "lang": "typescript",
+        "llm_tool_count": 3
+      },
+      {
+        "name": "github.com/usemanusai/jaegis-raverse",
+        "lang": "python",
+        "llm_tool_count": 35
+      }
+    ],
+    "factory_pattern": [
+      {
+        "name": "github.com/wearehoust/front-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 26
+      },
+      {
+        "name": "git+https://github.com/listbee-dev/listbee-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 21
+      },
+      {
+        "name": "git+https://github.com/klodr/mercury-invoicing-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 35
+      },
+      {
+        "name": "git+https://github.com/cyberash-dev/moex-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 20
+      }
+    ],
+    "unknown_pattern": [
+      {
+        "name": "github.com/cklam12345/wisdomgraph",
+        "lang": "python",
+        "llm_tool_count": 6
+      },
+      {
+        "name": "github.com/dingdawg-dev/dingdawg-finance-agent",
+        "lang": "typescript",
+        "llm_tool_count": 5
+      },
+      {
+        "name": "github.com/huynhkhanh1402/dejared-mcp",
+        "lang": "javascript",
+        "llm_tool_count": 9
+      },
+      {
+        "name": "github.com/yokingma/time-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 6
+      },
+      {
+        "name": "github.com/geiserx/genieacs-mcp",
+        "lang": "go",
+        "llm_tool_count": 12
+      },
+      {
+        "name": "github.com/taybenlor/runno",
+        "lang": "typescript",
+        "llm_tool_count": 2
+      },
+      {
+        "name": "github.com/jwwd-repos/modusop-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 9
+      },
+      {
+        "name": "github.com/compassalessandrolorenz/figma-context-mcp-air",
+        "lang": "typescript",
+        "llm_tool_count": 9
+      },
+      {
+        "name": "git+https://github.com/abokenan444/web-agent-bridge",
+        "lang": "javascript",
+        "llm_tool_count": 6
+      },
+      {
+        "name": "git+https://github.com/asksurf-ai/surf-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 12
+      },
+      {
+        "name": "git+https://github.com/pablovitasso/szkrabok",
+        "lang": "javascript",
+        "llm_tool_count": 6
+      },
+      {
+        "name": "git+https://github.com/goldentrii/novada-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 11
+      },
+      {
+        "name": "git+https://github.com/icloud-calendar-mcp/icloud-calendar-mcp",
+        "lang": "python",
+        "llm_tool_count": 5
+      },
+      {
+        "name": "git+https://github.com/shellicar/mcp-exec",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "git+https://github.com/tasopen/mcp-alphabanana",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "git+https://github.com/jared-goguen/gutenberg",
+        "lang": "typescript",
+        "llm_tool_count": 8
+      },
+      {
+        "name": "git+https://github.com/cyanheads/docwriter-mcp-server",
+        "lang": "typescript",
+        "llm_tool_count": 5
+      },
+      {
+        "name": "git+https://github.com/geiserx/cashpilot-mcp",
+        "lang": "go",
+        "llm_tool_count": 10
+      },
+      {
+        "name": "git+https://github.com/dorukardahan/domain-search-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 11
+      },
+      {
+        "name": "git+https://github.com/solesius/click-clack",
+        "lang": "typescript",
+        "llm_tool_count": 16
+      },
+      {
+        "name": "git+https://github.com/venizia-ai/ignis",
+        "lang": "typescript",
+        "llm_tool_count": 10
+      },
+      {
+        "name": "git+https://github.com/fastmcp-me/mcp-db-bridge",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "git+https://github.com/tinyfish-io/agentql-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "github.com/bethmaloney/rdl-mcp",
+        "lang": "python",
+        "llm_tool_count": 15
+      },
+      {
+        "name": "github.com/leandropg19/cuba-memorys",
+        "lang": "python",
+        "llm_tool_count": 12
+      },
+      {
+        "name": "github.com/quantamixsol/graqle",
+        "lang": "python",
+        "llm_tool_count": 84
+      },
+      {
+        "name": "github.com/ivanantigravity-lgtm/seedance-polza-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 4
+      },
+      {
+        "name": "github.com/bv-venky/excalidraw-architect-mcp",
+        "lang": "python",
+        "llm_tool_count": 5
+      },
+      {
+        "name": "github.com/norrietaylor/distillery",
+        "lang": "python",
+        "llm_tool_count": 24
+      },
+      {
+        "name": "github.com/bunnyf/pcb-mcp",
+        "lang": "python",
+        "llm_tool_count": 23
+      },
+      {
+        "name": "github.com/microqueryhq/microquery-mcp",
+        "lang": "python",
+        "llm_tool_count": 4
+      },
+      {
+        "name": "github.com/neogeweb3/code-health-suite",
+        "lang": "python",
+        "llm_tool_count": 28
+      },
+      {
+        "name": "github.com/hylouis233/bibverify",
+        "lang": "python",
+        "llm_tool_count": 4
+      },
+      {
+        "name": "github.com/huoshuiai42/huoshui-file-converter",
+        "lang": "python",
+        "llm_tool_count": 3
+      },
+      {
+        "name": "github.com/nveil-ai/nveil-toolkit",
+        "lang": "python",
+        "llm_tool_count": 4
+      },
+      {
+        "name": "github.com/ibm/mdm-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 5
+      },
+      {
+        "name": "github.com/yugmatech/yt-mcp-server-odoo",
+        "lang": "python",
+        "llm_tool_count": 11
+      },
+      {
+        "name": "github.com/yajieqi123/mcp-server-monday-qi",
+        "lang": "python",
+        "llm_tool_count": 21
+      },
+      {
+        "name": "github.com/coreshub/mcp-server-coreshub",
+        "lang": "python",
+        "llm_tool_count": 8
+      },
+      {
+        "name": "github.com/nahtheking/semantic-model-mcp",
+        "lang": "python",
+        "llm_tool_count": 19
+      },
+      {
+        "name": "github.com/maobui2907/vnstock-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 36
+      },
+      {
+        "name": "github.com/br0ski777/text-classifier-x402",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "github.com/silly-geese/quality-qr-mcp",
+        "lang": "unknown",
+        "llm_tool_count": 6
+      },
+      {
+        "name": "github.com/br0ski777/image-resize-x402",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "github.com/br0ski777/person-enrichment-x402",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "github.com/tapetide-hq/tapetide-stock-research-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 4
+      },
+      {
+        "name": "github.com/geiserx/pumperly-mcp",
+        "lang": "go",
+        "llm_tool_count": 5
+      },
+      {
+        "name": "github.com/sharminsirajudeen/drengr-community",
+        "lang": "unknown",
+        "llm_tool_count": 3
+      },
+      {
+        "name": "git+https://github.com/msegoviadev/api-mind-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 4
+      },
+      {
+        "name": "git+https://github.com/sh3ll3x3c/native-devtools-mcp",
+        "lang": "javascript",
+        "llm_tool_count": 18
+      },
+      {
+        "name": "git+https://github.com/lcm2m/lcm2m-caddis-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 28
+      },
+      {
+        "name": "git+https://github.com/abrahamoo/security-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 27
+      },
+      {
+        "name": "github.com/praveenc/mcp-server-builder",
+        "lang": "python",
+        "llm_tool_count": 2
+      },
+      {
+        "name": "github.com/ramarivera/pal-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 18
+      },
+      {
+        "name": "github.com/aiagentkarl/earthquake-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 8
+      },
+      {
+        "name": "github.com/br0ski777/email-send-x402",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "github.com/topofgames/la-ei-mcp",
+        "lang": "unknown",
+        "llm_tool_count": 11
+      },
+      {
+        "name": "github.com/br0ski777/solana-fees-x402",
+        "lang": "typescript",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "github.com/jmtroller/nhd-mcp-public-documentation",
+        "lang": "unknown",
+        "llm_tool_count": 6
+      }
+    ],
+    "go_only": [
+      {
+        "name": "github.com/vkhanhqui/figma-mcp-go",
+        "lang": "go",
+        "llm_tool_count": 69
+      },
+      {
+        "name": "github.com/your-ko/mcp-k8s-ro",
+        "lang": "go",
+        "llm_tool_count": 7
+      },
+      {
+        "name": "github.com/synapbus/synapbus",
+        "lang": "go",
+        "llm_tool_count": 17
+      }
+    ],
+    "truly_dynamic_runtime": [
+      {
+        "name": "git+https://github.com/mindsetconsulting/odata-mcp-v4-proxy",
+        "lang": "typescript",
+        "llm_tool_count": 6
+      },
+      {
+        "name": "git+https://github.com/dvcrn/mcp-server-siri-shortcuts",
+        "lang": "typescript",
+        "llm_tool_count": 4
+      },
+      {
+        "name": "github.com/daedalus/mcp-zabbix",
+        "lang": "python",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "github.com/rupinder2/mcp-orchestrator",
+        "lang": "python",
+        "llm_tool_count": 3
+      },
+      {
+        "name": "github.com/boostspace/boostspace-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 1
+      },
+      {
+        "name": "github.com/ibm/ibm-watsonxdata-dl-retrieval-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 1
+      }
+    ],
+    "xmcp_framework": [
+      {
+        "name": "git+https://github.com/beautyfree/appstore-connect-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 69
+      },
+      {
+        "name": "git+https://github.com/matiasngf/mcp-fetch",
+        "lang": "typescript",
+        "llm_tool_count": 5
+      }
+    ],
+    "custom_compat_layer": [
+      {
+        "name": "git+https://github.com/iseppo/e-arveldaja-mcp",
+        "lang": "typescript",
+        "llm_tool_count": 42
+      }
+    ],
+    "class_composition_fastmcp": [
+      {
+        "name": "github.com/amazon-mq/mcp-server-rabbitmq",
+        "lang": "python",
+        "llm_tool_count": 57
+      },
+      {
+        "name": "github.com/etalab-ia/data_gouv_fr_mcp_server",
+        "lang": "python",
+        "llm_tool_count": 1
+      }
+    ],
+    "openapi_driven_disk": [
+      {
+        "name": "github.com/kionsoftware/kion-mcp",
+        "lang": "python",
+        "llm_tool_count": 38
+      }
+    ],
+    "class_subclass_fastmcp": [
+      {
+        "name": "github.com/azhang/qdrant-llamaindex-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 17
+      }
+    ],
+    "openapi_driven_runtime_network": [
+      {
+        "name": "github.com/h2oai/h2ogpte-mcp-server",
+        "lang": "python",
+        "llm_tool_count": 37
+      }
+    ]
+  }
+}

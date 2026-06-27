@@ -1,0 +1,1484 @@
+{
+  "validationDate": "2026-05-14",
+  "type": "sensitivity-supplementary",
+  "decisionRule": "If the tool's output or action would be subject to access control, audit requirements, or regulatory obligations in a well-governed deployment, classify as sensitive.",
+  "sample": {
+    "total": 100,
+    "detSensitive": 60,
+    "detNonSensitive": 40
+  },
+  "tools": [
+    {
+      "num": 1,
+      "name": "memory_store",
+      "description": "Persistent key-value store with vector embedding \u2014 survives across sessions and is searchable by meaning, not just by file path. Use when native Write is wrong because the data is not a file (e.g. a learned pattern, a decision, a budget config) AND you need to recall it later by semantic query, not by path. Defaults to namespace=",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "config+key"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 2,
+      "name": "ryvo_protocol_config",
+      "description": "Fetch Ryvo Protocol global config and token registry.",
+      "repo": "Agonx402/agon-gateway-agentic",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "config+token"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 3,
+      "name": "drift_session_create",
+      "description": "Create a new Cortex session for tracking token usage and loaded memories.",
+      "repo": "git+dadbodgeoff/drift",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "session+token"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 4,
+      "name": "board_read",
+      "description": "Browse the Lightning Faucet message board. Returns recent posts from AI agents with scores, topics, and reply counts. Free \u2014 no payment required. Use this to discover what other agents are discussing.",
+      "repo": "git+lightningfaucet/lightning-wallet-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "payment"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 5,
+      "name": "send_invite_link",
+      "description": "Send a password reset invite link email to an existing user in OneLogin. User clicks link to set password and access OneLogin portal. Email parameter is case-sensitive. Use personal_email to send to different address than user\\",
+      "repo": "git+onelogin/onelogin-mcp",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "password"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 6,
+      "name": "jingswap_cancel_sbtc",
+      "description": "Cancel your sBTC deposit from the current Jingswap auction cycle and get a full refund. ",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "refund"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 7,
+      "name": "get_deposit_invoice",
+      "description": "Create a Lightning invoice to fund your operator account. Pay this invoice to add sats to your balance.",
+      "repo": "git+lightningfaucet/lightning-wallet-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "invoice"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 8,
+      "name": "memory_store",
+      "description": "Persistent key-value store with vector embedding \u2014 survives across sessions and is searchable by meaning, not just by file path. Use when native Write is wrong because the data is not a file (e.g. a learned pattern, a decision, a budget config) AND you need to recall it later by semantic query, not by path. Defaults to namespace=",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "config+key"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 9,
+      "name": "wallet_rotate_password",
+      "description": "",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "password"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 10,
+      "name": "security_quick_scan",
+      "description": "Quick vulnerability scan without taint analysis, secret detection, or dependency audit.",
+      "repo": "git+nahisaho/MUSUBIX",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "secret"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 11,
+      "name": "baserow_auth_login",
+      "description": "Login with username and password to get JWT token",
+      "repo": "git+ayyazzafar/mcp-baserow",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "password"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 12,
+      "name": "validate_iban",
+      "description": "Verify a European IBAN AND enrich it with bank, compliance and routing data. Use whenever the user mentions an IBAN, asks who the bank is, or asks if a SEPA payment will go through. Returns: valid, country, BIC, bank name, EMI/vIBAN flag, SEPA + VoP, risk_score, Swiss bc_nummer for CH/LI. Cost: $0.005.",
+      "repo": "cammac-creator/ibanforge",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "payment"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 13,
+      "name": "get_hiro_api_key",
+      "description": "Check whether a Hiro API key is configured. Shows the key source (stored file or environment variable) and a masked preview.",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "api_key",
+        "environment+variable"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 14,
+      "name": "create_api_key",
+      "description": "Create a new API key with specified scopes.",
+      "repo": "alainsvrd/borealhost-mcp",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "api_key"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 15,
+      "name": "get_smart_hook_env_vars",
+      "description": "Get environment variable names configured for a Smart Hook. Returns only variable names, not values (values are redacted for security). Environment variables store sensitive configuration like API keys, tokens, or service URLs that hook code can access via process.env. Use to audit what config variables a hook uses. Returns env var names array and x-request-id.",
+      "repo": "git+onelogin/onelogin-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "environment+variable"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 16,
+      "name": "generate_social_kit",
+      "description": "Generate a social media strategy + content kit (posts, captions, calendar, analytics framework). Requires Founder sub or SOCIAL_MEDIA_KIT purchase.",
+      "repo": "Rakesh1002/namemyapp-mcp",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "purchase"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 17,
+      "name": "purchase",
+      "description": "",
+      "repo": "123Ergo/unphurl-mcp",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "purchase"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 18,
+      "name": "Security Agent",
+      "description": "Security-focused agent for code auditing, vulnerability scanning, and threat detection. 15 built-in security controls including path traversal, injection, and credential protection.",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "credential"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 19,
+      "name": "create_app",
+      "description": "Create a new app based on a OneLogin connector. Minimum required: connector_id and name. For OIDC apps, use configuration to set login_url, redirect_uri, etc. For complete configuration options, use get_app on an existing app with the same connector. For OpenId Connect apps: response includes client_id and client_secret. Returns created app data and x-request-id.",
+      "repo": "git+onelogin/onelogin-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "secret"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 20,
+      "name": "lightning_pay_invoice",
+      "description": "Pay a BOLT-11 Lightning invoice from the embedded Lightning wallet. ",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "invoice"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 21,
+      "name": "renew_access_token",
+      "description": "Renew the DhanHQ access token for another 24 hours.",
+      "repo": "Vedhasagaran/dhan-mcp-py",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "access_token"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 22,
+      "name": "generate_invite_link",
+      "description": "Generate a password reset invite link for an existing user in OneLogin. Returns the link URL but does NOT send any email - use send_invite_link to email it. Provide link to user to enable them to set password and access OneLogin portal. Email parameter is case-sensitive. Returns invite link and x-request-id (API v1 - Rate Limited).",
+      "repo": "git+onelogin/onelogin-mcp",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "password"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 23,
+      "name": "1ly_update_link",
+      "description": "Update an API link by id (requires ONELY_API_KEY).",
+      "repo": "1lystore/1ly-mcp-server",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "api_key"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 24,
+      "name": "moltguard_credential_issue",
+      "description": "Issue a W3C Verifiable Credential (AgentTrustCredential) for a wallet.",
+      "repo": "MoltyCel/moltrust-mcp-server",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "credential"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 25,
+      "name": "1ly_list_keys",
+      "description": "List API keys for the authenticated agent store (requires ONELY_API_KEY).",
+      "repo": "1lystore/1ly-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "api_key"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 26,
+      "name": "list_global_environment_variables",
+      "description": "List all global (account-level) environment variables. These variables are available across all projects in the account. Returns variable names, masked values, and settings.",
+      "repo": "deployhq/deployhq-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "environment+variable"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 27,
+      "name": "keysend",
+      "description": "Send a payment directly to a node without an invoice (keysend/spontaneous payment). REQUIRES AGENT KEY.",
+      "repo": "git+lightningfaucet/lightning-wallet-mcp",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "payment",
+        "invoice"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 28,
+      "name": "claim_api_key",
+      "description": "Claim an API key using a claim token from the container.",
+      "repo": "alainsvrd/borealhost-mcp",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "api_key"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 29,
+      "name": "sieve_usage",
+      "description": "Check your Sieve API usage for the current billing period.",
+      "repo": "lmwharton/sieve-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "billing"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "confidentiality",
+      "human_notes": ""
+    },
+    {
+      "num": 30,
+      "name": "healthcare/literature-search",
+      "description": "Search medical literature with semantic understanding. Supports PubMed, Cochrane, and UpToDate sources with evidence level filtering.",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "medical"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": "FP: \"medical\" matched published literature search, not patient data"
+    },
+    {
+      "num": 31,
+      "name": "ssh_connect",
+      "description": "Connect to an SSH server using password or SSH key authentication. Supports IPv4 and IPv6.",
+      "repo": "git+zibdie/SSH-MCP-Server",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "password"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 32,
+      "name": "salary_ai_risk",
+      "description": "AI automation risk scores by ISCO occupation or NACE sector \u2014 exposure, complementarity, risk level",
+      "repo": "drivenbymyai-max/mcp-sputnikx-market",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "salary"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": "FP: \"salary\" matched aggregate occupation risk scores, not individual salary data"
+    },
+    {
+      "num": 33,
+      "name": "archive35_run_command",
+      "description": "",
+      "repo": "wolfschram/archive-35.com",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "run_command"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 34,
+      "name": "credentials_list",
+      "description": "List all stored credentials. Shows service names, key names, and last-updated timestamps. Does NOT reveal credential values.",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "credential"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 35,
+      "name": "create_purchase_intent",
+      "description": "",
+      "repo": "AiAgentKarl/agent-commerce-mcp-server",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "purchase"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 36,
+      "name": "hive_settle",
+      "description": "Settle a payment between two agents on one of 4 rails: Base USDC (Coinbase L2), ",
+      "repo": "srotzin/hive-mcp-connector",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "payment"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 37,
+      "name": "find_opendart_compensation",
+      "description": "OpenDART\uc5d0\uc11c \uae30\uc5c5\uc758 \uc774\uc0ac \ubc0f \uac10\uc0ac \ubcf4\uc218 \uc815\ubcf4\ub97c \uc218\uc9d1\ud569\ub2c8\ub2e4.",
+      "repo": "sayouzone/mcp-opendart-server",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "compensation"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 38,
+      "name": "checkout",
+      "description": "Complete the flight booking. IMPORTANT: Set confirm=true only when you have explicit user confirmation to purchase. Without confirm=true, returns a preview of the booking details.",
+      "repo": "markswendsen-code/mcp-delta",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "purchase"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 39,
+      "name": "gw_reset_password",
+      "description": "Resetta la password di un utente. Se non specificata, ne genera una temporanea sicura.",
+      "repo": "aringad/google-workspace-mcp",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "password"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 40,
+      "name": "backup_database",
+      "description": "Back up the Kiln database with optional credential redaction.",
+      "repo": "codeofaxel/Kiln",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "credential"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 41,
+      "name": "ssh_resolve_host",
+      "description": "Resolves a host alias from ~/.ssh/config to connection parameters",
+      "repo": "git+oaslananka-lab/mcp-ssh-tool",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "config+connection"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 42,
+      "name": "get_connection_string",
+      "description": "Get the Redis/Valkey connection string (redis:// URL) for a running instance. ",
+      "repo": "git+cachly-dev/cachly-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "connection_string"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 43,
+      "name": "decode_invoice",
+      "description": "Decode a BOLT11 invoice without paying it. Returns amount, description, expiry, and destination.",
+      "repo": "git+lightningfaucet/lightning-wallet-mcp",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "invoice"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 44,
+      "name": "create_api_authorization",
+      "description": "Create a new API authorization (OAuth 2.0 resource server) to protect your APIs with OneLogin. Required: name. Optional: description, connector_id (omit to use the account default API authorization connector), and a nested configuration object ({audiences, resource_identifier, access_token_expiration_minutes, refresh_token_expiration_minutes}). For convenience this tool also accepts top-level audience/audiences/resource_identifier/*_expiration_minutes and hoists them into configuration. Scopes can be provided as an array of {value, description} objects (value required); claims as an array of {name, user_attribute_mappings, user_attribute_macros?, attributes_transformations?} objects (name and user_attribute_mappings required) \u2014 both created alongside the authorization. Returns created authorization with ID and x-request-id.",
+      "repo": "git+onelogin/onelogin-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "access_token"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 45,
+      "name": "verify_session_factor",
+      "description": "Complete MFA verification during session login to obtain session token. Use in conjunction with create_session_login_token after MFA challenge. Provide device_id (from MFA challenge) and state_token. For OTP factors (SMS, Email, Authenticator): include otp_token. For OneLogin Protect: first call triggers push, subsequent calls poll with do_not_notify=true. Returns session_token on success or pending status for push factors. Returns session data and x-request-id.",
+      "repo": "git+onelogin/onelogin-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "session+token"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 46,
+      "name": "soul_profile",
+      "description": "Agent identity profile \u2014 trust score, behavioral DNA, character traits, SX# passport",
+      "repo": "drivenbymyai-max/mcp-sputnikx-market",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "passport"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 47,
+      "name": "get_org_plan",
+      "description": "Get the current org plan, seat usage, and billing info for an organization. ",
+      "repo": "git+cachly-dev/cachly-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "billing"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 48,
+      "name": "self_check",
+      "description": "Runs automated self-diagnosis on the Nervous System. Checks for: rate-limiting own operations, secrets in source code, info leakage in tool output, hardcoded paths, missing smoke tests, and version desync. Run before every publish and as part of security audits.",
+      "repo": "levelsofself/mcp-nervous-system",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "diagnosis"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 49,
+      "name": "ryvo_gateway_call",
+      "description": "Call an Ryvo Gateway route. Use without payment/SIWX headers to issue a challenge, then retry with PAYMENT-SIGNATURE, X-PAYMENT, or SIGN-IN-WITH-X. Devnet RPC/DAS/Wallet routes settle in devnet USDC; mainnet routes settle in mainnet USDC; Tokens API SIWX routes are free.",
+      "repo": "Agonx402/agon-gateway-agentic",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "payment"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 50,
+      "name": "create_session_login_token",
+      "description": "Authenticate a user and create a session token for custom login flows. Provide username/email and password. If MFA not required: returns session_token immediately for SSO access. If MFA required: returns state_token, devices (available MFA factors with device_id), and user info - must then call verify_session_factor. Use subdomain parameter to specify OneLogin account. Returns authentication result with session data or MFA challenge and x-request-id.",
+      "repo": "git+onelogin/onelogin-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "password",
+        "session+token"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 51,
+      "name": "get_restock_suggestions",
+      "description": "Find materials running low and generate purchase links.",
+      "repo": "codeofaxel/Kiln",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "purchase"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 52,
+      "name": "retrieve_credential",
+      "description": "Decrypt and return a stored credential.",
+      "repo": "codeofaxel/Kiln",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "credential"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 53,
+      "name": "create_account",
+      "description": "Create a new child account under your reseller account. Requires reseller privileges. The account object should contain name and optionally address1, address2, city, state, zip, country, phone, homepage, notes. Optionally specify plan (subscription plan name), subscription_state, enforce_user_limit, email_activation (true to send activation email to account owner), and api_credential (with name and permission: authentication_only, read_users, manage_users, read_all, or manage_all) to auto-create API credentials. Returns created account data with new ID and x-request-id for log tracing.",
+      "repo": "git+onelogin/onelogin-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "credential"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 54,
+      "name": "key",
+      "description": "Save an API key to .env for persistent use. e.g. key('EXA_API_KEY', 'sk-...')",
+      "repo": "kaiser-data/kitsune-mcp",
+      "classification": "unknown",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "api_key"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 55,
+      "name": "list_supported_stocks",
+      "description": "List tokenized US stocks tradable via Dinari. Without DINARI_API_KEY, returns a representative subset (10 high-confidence tickers) so the tool is useful for inspection. With credentials, fetches live from Dinari.",
+      "repo": "git+evidai/lemon-cake",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "api_key"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": "FP: \"api_key\" appeared in description context; tool just lists tickers"
+    },
+    {
+      "num": 56,
+      "name": "peptide_properties",
+      "description": "Compute peptide molecular properties from SMILES: molecular weight, formula, logP, TPSA, H-bond donors/acceptors, rotatable bonds, ring count, fraction Csp3, heavy atoms, formal charge, and Lipinski Rule-of-5 evaluation.",
+      "repo": "JonasRackl/labmate-mcp",
+      "classification": "read",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "charge"
+      ],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": "FP: \"charge\" matched molecular formal charge (chemistry), not financial"
+    },
+    {
+      "num": 57,
+      "name": "credentials_set",
+      "description": "Store or update a credential. Encrypts the value with AES-256-GCM and saves to ~/.aibtc/credentials.enc. If the service/key pair already exists, it is updated.",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "credential"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 58,
+      "name": "protect_pdf",
+      "description": "Add password protection to a PDF. Anyone opening the output will need the supplied password.",
+      "repo": "git+EigenCharlie/pdf-toolkit-mcp",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "password"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 59,
+      "name": "set_api_key",
+      "description": "Activate an IndieStack API key for this session.",
+      "repo": "Pattyboi101/indiestack",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "confidentiality",
+      "det_signals": [
+        "api_key"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 60,
+      "name": "ryvo_gateway_call_with_headers",
+      "description": "Call a Gateway route with caller-supplied auth/payment headers. MCP does not sign, pay, or execute wallet commands. Devnet routes expect devnet-USDC payment headers; mainnet routes expect mainnet-USDC headers; Tokens API SIWX routes are free.",
+      "repo": "Agonx402/agon-gateway-agentic",
+      "classification": "write",
+      "det_sensitivity": "sensitive",
+      "det_category": "autonomy",
+      "det_signals": [
+        "payment"
+      ],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 61,
+      "name": "deep_research_report",
+      "description": "Get final report from completed deep research session",
+      "repo": "git+nahisaho/MUSUBIX",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 62,
+      "name": "tapd_get_test_plan_count",
+      "description": "Get the count of test plans",
+      "repo": "git+xihe-lab/tapd-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 63,
+      "name": "get_market_info",
+      "description": "Get market info for all available instruments",
+      "repo": "git+haeminmoon/pacifica-cli",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 64,
+      "name": "get_project_schemes",
+      "description": "Get the available build schemes for the specified Xcode project or workspace.",
+      "repo": "drewster99/xcode-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 65,
+      "name": "paean_list_tasks",
+      "description": "List tasks with optional filtering",
+      "repo": "git+paean-ai/openpaean",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 66,
+      "name": "ActivateObjects",
+      "description": "Activate one or multiple ABAP repository objects. Use after Create/Update when objects remain inactive, or for group activation of related objects (e.g., domains + data elements + tables together). Works with any object type.",
+      "repo": "fr0ster/mcp-abap-adt",
+      "classification": "write",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 67,
+      "name": "GetNodeStructureLow",
+      "description": "[low-level] Fetch node structure from ADT repository. Used for object tree navigation and structure discovery. Can use session_id and session_state from GetSession to maintain the same session.",
+      "repo": "git+babamba2/abap-mcp-adt-powerup",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 68,
+      "name": "GetVirtualFoldersLow",
+      "description": "[low-level] Retrieve hierarchical virtual folder contents from ADT information system. Used for browsing ABAP objects by package, group, type, etc.",
+      "repo": "git+fr0ster/mcp-abap-adt",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 69,
+      "name": "emergency_status",
+      "description": "Get the emergency stop latch status for one printer or the entire fleet.",
+      "repo": "codeofaxel/Kiln",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 70,
+      "name": "update_event",
+      "description": "PREFERRED: Update event fields without iCal formatting. Supports: SUMMARY (title), DESCRIPTION (details), LOCATION (place), DTSTART (start time), DTEND (end time), STATUS (TENTATIVE/CONFIRMED/CANCELLED), and any RFC 5545 property including custom X-* properties (e.g., X-ZOOM-LINK, X-MEETING-ROOM).",
+      "repo": "PhilflowIO/dav-mcp",
+      "classification": "write",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 71,
+      "name": "fedbrain_search",
+      "description": "FedBrain context-weighted search: Search the global commons, weighting results by tech-stack similarity. ",
+      "repo": "git+cachly-dev/cachly-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 72,
+      "name": "agent_spawn",
+      "description": "Spawn a new agent in the swarm (V2 compatible). Deprecated: Use agent/spawn instead.",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "unknown",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 73,
+      "name": "drift_java",
+      "description": "Analyze Java projects: routes, error handling, data access, annotations. Actions: status (project overview), routes (HTTP routes - Spring MVC, JAX-RS, Micronaut, Quarkus), errors (error handling patterns), data-access (database patterns - Spring Data JPA, Hibernate, JDBC, MyBatis), annotations (annotation usage).",
+      "repo": "git+dadbodgeoff/drift",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 74,
+      "name": "file_upload_delete",
+      "description": "Delete a previously uploaded file by its handle",
+      "repo": "git+PrefectHQ/fastmcp-ts",
+      "classification": "write",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "sensitive",
+      "human_category": "integrity",
+      "human_notes": "FN: file deletion (integrity) -- \"delete\" is a write keyword, not a sensitivity keyword"
+    },
+    {
+      "num": 75,
+      "name": "cache_status",
+      "description": "Get cache status (Redis, WP object cache, hit rates).",
+      "repo": "alainsvrd/borealhost-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 76,
+      "name": "audit_mcp_server",
+      "description": "Launch a target MCP server over stdio, enumerate tools, and run active security probes against its exposed tools. Requires AGENT_SECURITY_ADMIN_MODE=1.",
+      "repo": "git+joepangallo/mcp-audit-server",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "sensitive",
+      "human_category": "autonomy",
+      "human_notes": "FN: launches servers + runs security probes (autonomy) -- domain-specific vocabulary"
+    },
+    {
+      "num": 77,
+      "name": "ReadMetadataExtension",
+      "description": "[read-only] Read ABAP metadata extension (DDLX) source code and metadata (package, responsible, description, etc.).",
+      "repo": "git+babamba2/abap-mcp-adt-powerup",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 78,
+      "name": "ordinals_p2p_counter",
+      "description": "",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "sensitive",
+      "human_category": "autonomy",
+      "human_notes": "FN: BIP-137 wallet signing for counter-offers (autonomy) -- crypto-specific"
+    },
+    {
+      "num": 79,
+      "name": "multiply",
+      "description": "Multiply two numbers.",
+      "repo": "datalayer/mcp-server-composer",
+      "classification": "unknown",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 80,
+      "name": "pattern_store",
+      "description": "Store learned pattern",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "unknown",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 81,
+      "name": "verify_audit_chain",
+      "description": "Walks the hash-chained audit log and verifies every entry. Returns chain integrity status - valid/invalid, entry count, and where the chain breaks if tampered.",
+      "repo": "levelsofself/mcp-nervous-system",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 82,
+      "name": "get_top_expenses",
+      "description": "Get top expenses grouped by category or vendor.",
+      "repo": "NyxToolsDev/quickbooks-mcp-server",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 83,
+      "name": "memory_search_unified",
+      "description": "Search across both Claude Code memories and AgentDB entries using semantic vector similarity. Returns merged, deduplicated results from all namespaces. Use when native Read/Write is wrong because you need (a) cross-session retrieval by semantic similarity (vector embeddings) not by file path, (b) namespacing across projects without managing directory layout, or (c) the .swarm/memory.db audit trail. For one-shot file I/O, native Read/Write is fine.",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 84,
+      "name": "get_transport_classification",
+      "description": "Get UN transport classification for chemicals (dangerous goods shipping).",
+      "repo": "littleblakew/msds-chain-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 85,
+      "name": "opengrok_update_memory",
+      "description": "Write or append to active-task.md or investigation-log.md.",
+      "repo": "git+IcyHot09/opengrok-mcp-server",
+      "classification": "write",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 86,
+      "name": "get_settings_metadata",
+      "description": "Get all settings metadata for an entity type",
+      "repo": "Pollamin/opendock-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 87,
+      "name": "sona/lora/apply-base",
+      "description": "Apply base-layer LoRA adaptation",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "write",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 88,
+      "name": "get_dividends",
+      "description": "",
+      "repo": "mhajder/ghostfolio-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 89,
+      "name": "list_recent_briefs",
+      "description": "List the caller's most recent decision briefs.",
+      "repo": "Advanced-Binary-Operations/QuReDec_MCP",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 90,
+      "name": "get_board_labels",
+      "description": "Get all labels of a specific board",
+      "repo": "delorenj/mcp-server-trello",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 91,
+      "name": "get_summary_profile",
+      "description": "Get company profile information including sector, industry, and business summary. Handles missing sector data with fallback classification.",
+      "repo": "git+kanishka-namdeo/yfnhanced-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 92,
+      "name": "BuyWhere Singapore catalog",
+      "description": "Available product categories in Singapore",
+      "repo": "richmondteo-code/buywhere-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 93,
+      "name": "search_geolocations",
+      "description": "Search or look up geo locations for campaign geo targeting. Search by name (query) to find locations, or provide geoIds to look up specific locations by ID. Returns location display name, entity type (Country/AdminArea/Locality), and ID for use in ad group targeting.",
+      "repo": "Happygallo/apple-ads-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 94,
+      "name": "sqlite_transaction_rollback",
+      "description": "Rollback the current transaction, discarding all changes.",
+      "repo": "neverinfamous/db-mcp",
+      "classification": "unknown",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "sensitive",
+      "human_category": "integrity",
+      "human_notes": "FN: discards database changes (integrity) -- \"rollback\" not in keyword list"
+    },
+    {
+      "num": 95,
+      "name": "klaviyo_events_get_profile",
+      "description": "Get the profile associated with an event.",
+      "repo": "git+doinglean/klaviyo-mcp",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 96,
+      "name": "ruvllm_sona_create",
+      "description": "Create a SONA instant adaptation loop (<1ms adaptation cycles). Use when sending every prompt to the Anthropic API is wrong because you need local inference \u2014 air-gapped environments, MicroLoRA-fine-tuned per-task adapters, or sub-cent per-call cost. For general Claude work native Task is the right call.",
+      "repo": "git+ruvnet/claude-flow",
+      "classification": "write",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 97,
+      "name": "morph_list_supermodels",
+      "description": "List all supermodels (W1 through W19): id, name, role, lane, lead shape, tagline. The supermodel directory is the canonical lineage for every spawned brood variant. Free up to 100 calls/day per agent-DID; $0.001/call thereafter via x402 USDC settlement on Base.",
+      "repo": "srotzin/hive-mcp-morph",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 98,
+      "name": "get_text_extents",
+      "description": "Calculate the bounding box of a text string.",
+      "repo": "daedalus/mcp-kicad",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 99,
+      "name": "ActivateDataElementLow",
+      "description": "Operation: Activate, Create, Update. Subject: DataElement. Will be useful for activating, creating, or updating data element. [low-level] Activate an ABAP data element. Returns activation status and any warnings/errors. Can use session_id and session_state from GetSession to maintain the same session.",
+      "repo": "git+fr0ster/mcp-abap-adt",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    },
+    {
+      "num": 100,
+      "name": "get_transcript",
+      "description": "",
+      "repo": "zlatkoc/youtube-summarize",
+      "classification": "read",
+      "det_sensitivity": "non-sensitive",
+      "det_category": null,
+      "det_signals": [],
+      "human_sensitivity": "non-sensitive",
+      "human_category": "",
+      "human_notes": ""
+    }
+  ],
+  "agreement": {
+    "deterministic_vs_human": {
+      "n": 100,
+      "agreement": 0.84,
+      "kappa": 0.6748,
+      "true_sensitive": 49,
+      "true_non_sensitive": 35,
+      "false_positive": 11,
+      "false_negative": 5,
+      "precision": 0.8167,
+      "recall": 0.9074
+    },
+    "false_positive_patterns": [
+      "#30 healthcare/literature-search: \"medical\" matched published literature search, not patient data",
+      "#32 salary_ai_risk: \"salary\" matched aggregate occupation risk scores, not individual salary data",
+      "#55 list_supported_stocks: \"api_key\" appeared in description context, tool just lists tickers",
+      "#56 peptide_properties: \"charge\" matched molecular formal charge (chemistry), not financial"
+    ],
+    "false_negative_patterns": [
+      "#74 file_upload_delete: file deletion (integrity) -- \"delete\" is a write keyword, not a sensitivity keyword",
+      "#76 audit_mcp_server: launches servers + runs security probes (autonomy) -- domain-specific vocabulary",
+      "#78 ordinals_p2p_counter: BIP-137 wallet signing for counter-offers (autonomy) -- crypto-specific",
+      "#94 sqlite_transaction_rollback: discards database changes (integrity) -- \"rollback\" not in keyword list"
+    ],
+    "false_positive_items_recomputed_vs_FINAL": [
+      "board_read",
+      "credentials_list",
+      "generate_social_kit",
+      "healthcare/literature-search",
+      "list_global_environment_variables",
+      "list_supported_stocks",
+      "memory_store",
+      "memory_store",
+      "peptide_properties",
+      "salary_ai_risk",
+      "security_quick_scan"
+    ],
+    "false_negative_items_recomputed_vs_FINAL": [
+      "audit_mcp_server",
+      "file_upload_delete",
+      "klaviyo_events_get_profile",
+      "ordinals_p2p_counter",
+      "sqlite_transaction_rollback"
+    ]
+  },
+  "validationNote": "8 disagreements found on reassessment with full source context. 4 FP from keyword matches in non-governance contexts. 4 FN from domain-specific vocabulary not covered by keyword lists.",
+  "_provenance": {
+    "human_labels_source": "validation-sensitivity-review-full-FINAL.md (canonical, 5/15); n100 human_sensitivity updated 2026-06-25"
+  }
+}

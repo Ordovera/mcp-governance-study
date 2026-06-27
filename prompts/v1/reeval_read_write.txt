@@ -1,0 +1,22 @@
+You are classifying an MCP tool as "read" or "write" based on the persistent-effect rule:
+
+- **read**: no persistent effect after the response is returned
+- **write**: causes an effect that persists after the response is returned
+
+If calling this tool twice produces a different world state than not calling it at all, classify as write.
+
+Tool: `{NAME}`
+Server: {REPO}
+Description: {DESCRIPTION}
+{ANNOTATIONS}
+
+Source code:
+```
+{CODE}
+```
+
+Respond with ONLY a JSON object:
+{
+  "classification": "read" | "write",
+  "rationale": "one sentence explaining why, citing the persistent effect or lack thereof"
+}

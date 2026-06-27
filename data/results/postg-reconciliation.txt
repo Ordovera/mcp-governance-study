@@ -1,0 +1,53 @@
+========================================================================
+POST-G RECONCILIATION  (N=945, source-available=760, remote=185)
+========================================================================
+
+[Table 1] Gap prevalence (source-available N=760)  outline -> post-G
+  __any__                               488( 64.2%) ->  539( 70.9%) [67.6,74.0]  Δ+51
+  auth-without-actor-logging            303( 39.9%) ->  303( 39.9%) [36.4,43.4]  Δ+0
+  global-auth-over-sensitive-tools      218( 28.7%) ->  308( 40.5%) [37.1,44.1]  Δ+90
+  ungated-write                         152( 20.0%) ->  218( 28.7%) [25.6,32.0]  Δ+66
+  destructive-without-audit-trail        71(  9.3%) ->  103( 13.6%) [11.3,16.2]  Δ+32
+  sensitive-read-without-logging         46(  6.1%) ->   72(  9.5%) [7.6,11.8]  Δ+26
+  logging-without-attribution            43(  5.7%) ->   43(  5.7%) [4.2,7.5]  Δ+0
+  sensitive-read-without-auth             3(  0.4%) ->    5(  0.7%) [0.3,1.5]  Δ+2
+  (any-gap / full N=945)                488(51.6%) ->  539( 57.0%)
+
+[4.1 / 4.8] Tool extraction
+  heuristic(det) tools:   outline 10,335 -> post-G 14282
+  LLM supplementary:      outline  4,124 -> post-G 4124
+  source w/ det tools:    647/760 = 85%  (outline 'extraction rate 63%')
+  source w/ ZERO tools:   113/760 = 15%  (outline '37% no extractable tools')
+  language dist (source): typescript 48%, python 40%, javascript 7%, unknown 3%, go 2%
+
+[4.5] Sensitivity (recomputed on merged tools)  outline -> post-G
+  sensitive tools:        236 -> 375
+  sensitive-read:         120 -> 198  (write 107)
+  servers w/ sens-read:    57 -> 93
+  categories: confidentiality 211, autonomy 158, integrity 6
+  sens-read servers lacking co-located logging: 72/93 = 77%  (abstract said 81%)
+
+[Table 4] Association with gap presence (source-available, recomputed)
+  tool count >10 vs 1-10                94% vs   58%   chi2= 109.7  OR=11.50
+  has tools vs zero                     76% vs   42%   chi2=  55.4  OR= 4.46
+  has sensitive tools                   98% vs   66%   chi2=  50.5  OR=20.81
+  has authentication                    76% vs   49%   chi2=  42.9  OR= 3.37
+  registry presence                     75% vs   68%   chi2=   5.0  OR= 1.44
+  TypeScript vs Python                  74% vs   68%   chi2=   2.8  OR= 1.31
+
+[4.4] Per-stratum (source-available)  N / tools/server / gap-rate
+  npm+registry       N= 181   17.9/srv  gap   76%
+  npm-only           N= 207   28.9/srv  gap   77%
+  other-ecosystem    N=  81    5.9/srv  gap   49%
+  pypi+registry      N= 152   16.2/srv  gap   74%
+  pypi-only          N= 139   14.1/srv  gap   65%
+
+[4.7] Model-A governance score by gap presence  outline -> post-G
+  gap servers:    mean 5.34 -> 5.26 (n=539)
+  no-gap servers: mean 3.02 -> 2.68 (n=221)
+  (Model A/C distributions and Figure 1 cross-tab are indicator-based -> unchanged.)
+
+[Table 2 indicators] pattern-file-based -> STABLE (read from stored, unchanged).
+  Exceptions (tool-derived) to verify by analyze re-run: readWriteSeparation, sensitiveReadProtection.
+
+DONE

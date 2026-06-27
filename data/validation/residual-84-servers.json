@@ -1,0 +1,1481 @@
+[
+  {
+    "name": "github.com/rog0x/mcp-git-tools",
+    "source": "https://github.com/rog0x/mcp-git-tools",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 5,
+    "llm_tool_names": [
+      "git_log",
+      "git_diff",
+      "git_blame",
+      "git_stats",
+      "git_branch"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/eutech-directory/legis-link-mcp",
+    "source": "https://github.com/eutech-directory/legis-link-mcp",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 9,
+    "llm_tool_names": [
+      "check_compliance",
+      "get_code_reference",
+      "list_supported_regions",
+      "calculate_technical_spec",
+      "generate_safety_checklist"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp import (legis_link_mcp_server.py); @modelcontextprotocol/sdk (package.json)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/wearehoust/front-mcp",
+    "source": "https://github.com/wearehoust/front-mcp",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 26,
+    "llm_tool_names": [
+      "conversations",
+      "messages",
+      "contacts",
+      "tags",
+      "inboxes"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/server.ts); @modelcontextprotocol/sdk (src/tools/error-mapper.ts); @modelcontextprotocol/sdk (src/tools/format.ts); @modelcontextprotocol/sdk (src/tools/register.ts); @modelcontextprotocol/sdk (src/tools/validate.ts)) but no tools were extracted. This repo appears to be a wrapper around `zod` -- audit the upstream package for tool definitions."
+    ]
+  },
+  {
+    "name": "github.com/cklam12345/wisdomgraph",
+    "source": "https://github.com/cklam12345/wisdomGraph",
+    "language": "python",
+    "stratum": "npm+registry",
+    "llm_tool_count": 6,
+    "llm_tool_names": [
+      "wisdom_ingest",
+      "wisdom_remember",
+      "wisdom_learn",
+      "wisdom_query",
+      "wisdom_reflect"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp.server (wisdom/mcp.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/dingdawg-dev/dingdawg-finance-agent",
+    "source": "https://github.com/DingDawg-dev/dingdawg-finance-agent",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 5,
+    "llm_tool_names": [
+      "financial_analysis",
+      "budget_forecast",
+      "compliance_check",
+      "expense_categorize",
+      "risk_assessment"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/benswel/qr-agent-core",
+    "source": "https://github.com/benswel/qr-agent-core",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 37,
+    "llm_tool_names": [
+      "create_qr_code",
+      "get_qr_code",
+      "update_qr_destination",
+      "list_qr_codes",
+      "delete_qr_code"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (packages/mcp/package.json); @modelcontextprotocol/sdk (packages/mcp/src/server.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/stahldavid/sensegrep",
+    "source": "https://github.com/Stahldavid/sensegrep",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 3,
+    "llm_tool_names": [
+      "sensegrep_search",
+      "sensegrep_detect_duplicates",
+      "sensegrep_index"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (packages/mcp/package.json); @modelcontextprotocol/sdk (packages/mcp/src/server.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/vkhanhqui/figma-mcp-go",
+    "source": "https://github.com/vkhanhqui/figma-mcp-go",
+    "language": "go",
+    "stratum": "npm+registry",
+    "llm_tool_count": 69,
+    "llm_tool_names": [
+      "get_document",
+      "get_pages",
+      "get_metadata",
+      "get_selection",
+      "get_node"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (github.com/mark3labs/mcp-go (cmd/figma-mcp-go/main.go); github.com/mark3labs/mcp-go (internal/prompts/annotation_conversion_strategy.go); github.com/mark3labs/mcp-go (internal/prompts/bulk_rename_strategy.go); github.com/mark3labs/mcp-go (internal/prompts/design_strategy.go); github.com/mark3labs/mcp-go (internal/prompts/design_token_generation_strategy.go); github.com/mark3labs/mcp-go (internal/prompts/generate_color_palette.go); github.com/mark3labs/mcp-go (internal/prompts/generate_component_variants.go); github.com/mark3labs/mcp-go (internal/prompts/generate_type_scale.go); github.com/mark3labs/mcp-go (internal/prompts/prompts.go); github.com/mark3labs/mcp-go (internal/prompts/prompts_test.go); github.com/mark3labs/mcp-go (internal/prompts/reaction_to_connector_strategy.go); github.com/mark3labs/mcp-go (internal/prompts/read_design_strategy.go); github.com/mark3labs/mcp-go (internal/prompts/style_audit_strategy.go); github.com/mark3labs/mcp-go (internal/prompts/swap_overrides_instances.go); github.com/mark3labs/mcp-go (internal/prompts/text_replacement_strategy.go); github.com/mark3labs/mcp-go (internal/tools.go); github.com/mark3labs/mcp-go (internal/tools_handler_test.go); github.com/mark3labs/mcp-go (internal/tools_read.go); github.com/mark3labs/mcp-go (internal/tools_read_document.go); github.com/mark3labs/mcp-go (internal/tools_read_export.go); github.com/mark3labs/mcp-go (internal/tools_read_styles.go); github.com/mark3labs/mcp-go (internal/tools_write.go); github.com/mark3labs/mcp-go (internal/tools_write_components.go); github.com/mark3labs/mcp-go (internal/tools_write_create.go); github.com/mark3labs/mcp-go (internal/tools_write_modify.go); github.com/mark3labs/mcp-go (internal/tools_write_page.go); github.com/mark3labs/mcp-go (internal/tools_write_prototype.go); github.com/mark3labs/mcp-go (internal/tools_write_styles.go); github.com/mark3labs/mcp-go (internal/tools_write_variables.go)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/huynhkhanh1402/dejared-mcp",
+    "source": "https://github.com/HuynhKhanh1402/dejared-mcp",
+    "language": "javascript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 9,
+    "llm_tool_names": [
+      "dejared_list_packages",
+      "dejared_list_classes",
+      "dejared_list_resources",
+      "dejared_read_resource",
+      "dejared_search_class"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/yokingma/time-mcp",
+    "source": "https://github.com/yokingma/time-mcp",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 6,
+    "llm_tool_names": [
+      "current_time",
+      "relative_time",
+      "days_in_month",
+      "get_timestamp",
+      "convert_time"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/geiserx/genieacs-mcp",
+    "source": "https://github.com/GeiserX/genieacs-mcp",
+    "language": "go",
+    "stratum": "npm+registry",
+    "llm_tool_count": 12,
+    "llm_tool_names": [
+      "reboot_device",
+      "download_firmware",
+      "refresh_parameter",
+      "set_parameter",
+      "get_parameter"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (github.com/mark3labs/mcp-go (cmd/server/main.go); github.com/mark3labs/mcp-go (internal/resources/catalogue.go); github.com/mark3labs/mcp-go (internal/resources/device.go); github.com/mark3labs/mcp-go (internal/resources/faults.go); github.com/mark3labs/mcp-go (internal/resources/file.go); github.com/mark3labs/mcp-go (internal/resources/presets.go); github.com/mark3labs/mcp-go (internal/resources/provisions.go); github.com/mark3labs/mcp-go (internal/resources/resources_test.go); github.com/mark3labs/mcp-go (internal/resources/tasks.go); github.com/mark3labs/mcp-go (internal/tools/connection_request.go); github.com/mark3labs/mcp-go (internal/tools/delete_task.go); github.com/mark3labs/mcp-go (internal/tools/download.go); github.com/mark3labs/mcp-go (internal/tools/get_parameter.go); github.com/mark3labs/mcp-go (internal/tools/preset.go); github.com/mark3labs/mcp-go (internal/tools/provision.go); github.com/mark3labs/mcp-go (internal/tools/reboot.go); github.com/mark3labs/mcp-go (internal/tools/refresh.go); github.com/mark3labs/mcp-go (internal/tools/retry_task.go); github.com/mark3labs/mcp-go (internal/tools/search_devices.go); github.com/mark3labs/mcp-go (internal/tools/set_parameter.go); github.com/mark3labs/mcp-go (internal/tools/tag.go); github.com/mark3labs/mcp-go (internal/tools/tools_test.go)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/taybenlor/runno",
+    "source": "https://github.com/taybenlor/runno",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 2,
+    "llm_tool_names": [
+      "run_code",
+      "run_code_with_files"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (packages/mcp/package.json); @modelcontextprotocol/sdk (packages/mcp/src/main.ts); import mcp (packages/website/src/pages/articles.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/jwwd-repos/modusop-mcp",
+    "source": "https://github.com/jwwd-repos/modusop-mcp",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 9,
+    "llm_tool_names": [
+      "whoami",
+      "search_knowledge",
+      "get_chunk",
+      "list_recent",
+      "get_client_brief"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/compassalessandrolorenz/figma-context-mcp-air",
+    "source": "https://github.com/compassalessandrolorenz/Figma-Context-MCP-AIR",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 9,
+    "llm_tool_names": [
+      "get_figma_data",
+      "download_figma_images",
+      "whoami",
+      "get_design_context",
+      "get_screenshot"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/mcp/index.ts); @modelcontextprotocol/sdk (src/server.ts); @modelcontextprotocol/sdk (src/tests/integration.test.ts); @modelcontextprotocol/sdk (src/tests/server.test.ts); @modelcontextprotocol/sdk (src/tests/stdio.test.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/abokenan444/web-agent-bridge",
+    "source": "git+https://github.com/abokenan444/web-agent-bridge",
+    "language": "javascript",
+    "stratum": "npm-only",
+    "llm_tool_count": 6,
+    "llm_tool_names": [
+      "wab_scan_url",
+      "wab_fairness_check",
+      "wab_find_deals",
+      "wab_agent_query",
+      "wab_generate_snippet"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (wab-mcp/package.json); @modelcontextprotocol/sdk (wab-mcp/src/index.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/asksurf-ai/surf-mcp",
+    "source": "git+https://github.com/asksurf-ai/surf-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 12,
+    "llm_tool_names": [
+      "surf_market",
+      "surf_exchange",
+      "surf_wallet",
+      "surf_token",
+      "surf_social"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (examples/agent.ts); @modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/tools.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/pablovitasso/szkrabok",
+    "source": "git+https://github.com/PabloVitasso/szkrabok",
+    "language": "javascript",
+    "stratum": "npm-only",
+    "llm_tool_count": 6,
+    "llm_tool_names": [
+      "session_manage",
+      "session_run_test",
+      "browser_scrape",
+      "browser_run",
+      "browser_run_test"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (packages/runtime/mcp-client/runtime/transport.js); @modelcontextprotocol/sdk (packages/runtime/package.json); @modelcontextprotocol/sdk (src/server.js); @modelcontextprotocol/sdk (tests/playwright/integration/config-mcp-roots.spec.js); @modelcontextprotocol/sdk (tests/playwright/integration/interop.spec.js)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/goldentrii/novada-mcp",
+    "source": "git+https://github.com/Goldentrii/novada-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 11,
+    "llm_tool_names": [
+      "novada_search",
+      "novada_extract",
+      "novada_crawl",
+      "novada_research",
+      "novada_map"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/mindsetconsulting/odata-mcp-v4-proxy",
+    "source": "git+https://github.com/MindsetConsulting/odata-mcp-v4-proxy",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 6,
+    "llm_tool_names": [
+      "DYNAMIC:{EntitySet}_list",
+      "DYNAMIC:{EntitySet}_get",
+      "DYNAMIC:{EntitySet}_create",
+      "DYNAMIC:{EntitySet}_update",
+      "DYNAMIC:{EntitySet}_delete"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/resources/api-docs.ts); @modelcontextprotocol/sdk (src/server/mcp-server.ts); @modelcontextprotocol/sdk (src/tools/registry.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/icloud-calendar-mcp/icloud-calendar-mcp",
+    "source": "git+https://github.com/icloud-calendar-mcp/icloud-calendar-mcp",
+    "language": "python",
+    "stratum": "npm-only",
+    "llm_tool_count": 5,
+    "llm_tool_names": [
+      "list_calendars",
+      "get_events",
+      "create_event",
+      "update_event",
+      "delete_event"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "git+https://github.com/bthurlow/artificer-mcp",
+    "source": "git+https://github.com/bthurlow/artificer-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 49,
+    "llm_tool_names": [
+      "banner-set",
+      "cta-button",
+      "price-badge",
+      "a-b-variants",
+      "template-fill"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/ads/index.ts); @modelcontextprotocol/sdk (src/assets/index.ts); @modelcontextprotocol/sdk (src/audio/index.ts); @modelcontextprotocol/sdk (src/color/index.ts); @modelcontextprotocol/sdk (src/compositing/index.ts); @modelcontextprotocol/sdk (src/content/index.ts); @modelcontextprotocol/sdk (src/core/index.ts); @modelcontextprotocol/sdk (src/generation/image.ts); @modelcontextprotocol/sdk (src/generation/index.ts); @modelcontextprotocol/sdk (src/generation/music.ts); @modelcontextprotocol/sdk (src/generation/nanobanana.ts); @modelcontextprotocol/sdk (src/generation/speech.ts); @modelcontextprotocol/sdk (src/generation/video.ts); @modelcontextprotocol/sdk (src/guides/index.ts); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/social/index.ts); @modelcontextprotocol/sdk (src/storage/index.ts); @modelcontextprotocol/sdk (src/text/index.ts); @modelcontextprotocol/sdk (src/utils/register.ts); @modelcontextprotocol/sdk (src/video/index.ts); @modelcontextprotocol/sdk (src/workflows/index.ts); @modelcontextprotocol/sdk (tests/helpers/server.ts); @modelcontextprotocol/sdk (tests/integration/ffmpeg.test.ts); @modelcontextprotocol/sdk (tests/integration/tools.test.ts); @modelcontextprotocol/sdk (tests/protocol/server.test.ts); @modelcontextprotocol/sdk (tests/unit/ads/ads.test.ts); @modelcontextprotocol/sdk (tests/unit/assets/assets.test.ts); @modelcontextprotocol/sdk (tests/unit/audio/audio.test.ts); @modelcontextprotocol/sdk (tests/unit/color/color.test.ts); @modelcontextprotocol/sdk (tests/unit/compositing/compositing.test.ts); @modelcontextprotocol/sdk (tests/unit/content/content.test.ts); @modelcontextprotocol/sdk (tests/unit/core/core.test.ts); @modelcontextprotocol/sdk (tests/unit/generation/generation.test.ts); @modelcontextprotocol/sdk (tests/unit/generation/nanobanana.test.ts); @modelcontextprotocol/sdk (tests/unit/guides/guides.test.ts); @modelcontextprotocol/sdk (tests/unit/social/social.test.ts); @modelcontextprotocol/sdk (tests/unit/storage/tools.test.ts); @modelcontextprotocol/sdk (tests/unit/text/text.test.ts); @modelcontextprotocol/sdk (tests/unit/video/video.test.ts); @modelcontextprotocol/sdk (tests/unit/workflows/workflows.test.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/listbee-dev/listbee-mcp",
+    "source": "git+https://github.com/listbee-dev/listbee-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 21,
+    "llm_tool_names": [
+      "api_key_self_revoke",
+      "bootstrap_poll",
+      "bootstrap_start",
+      "bootstrap_verify",
+      "create_listing"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/handlers/bootstrap.ts); @modelcontextprotocol/sdk (src/handlers/files.ts); @modelcontextprotocol/sdk (src/handlers/stripe-connect.ts); @modelcontextprotocol/sdk (src/server.ts); @modelcontextprotocol/sdk (src/transports/http.ts); @modelcontextprotocol/sdk (src/transports/stdio.ts); @modelcontextprotocol/sdk (src/types.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/beautyfree/appstore-connect-mcp",
+    "source": "git+https://github.com/beautyfree/appstore-connect-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 69,
+    "llm_tool_names": [
+      "add-beta-testers-to-group",
+      "create-app-store-version",
+      "create-customer-review-response",
+      "create-phased-release",
+      "create-subscription-availability"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "git+https://github.com/shellicar/mcp-exec",
+    "source": "git+https://github.com/shellicar/mcp-exec",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "exec"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (examples/basic/package.json); @modelcontextprotocol/sdk (examples/basic/src/entry/index.ts); @modelcontextprotocol/sdk (packages/mcp-exec/package.json); @modelcontextprotocol/sdk (packages/mcp-exec/src/createExecServer.ts); @modelcontextprotocol/sdk (packages/mcp-exec/src/entry/cli.ts); @modelcontextprotocol/sdk (packages/mcp-exec/src/execToolDefinition.ts); @modelcontextprotocol/sdk (packages/mcp-exec/test/integration.spec.ts)) but no tools were extracted. This repo appears to be a wrapper around `@shellicar/mcp-exec` -- audit the upstream package for tool definitions."
+    ]
+  },
+  {
+    "name": "git+https://github.com/tasopen/mcp-alphabanana",
+    "source": "git+https://github.com/tasopen/mcp-alphabanana",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "generate_image"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); from 'fastmcp' (src/index.ts); @modelcontextprotocol/sdk (test/helpers/mcp-client.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/iseppo/e-arveldaja-mcp",
+    "source": "git+https://github.com/iseppo/e-arveldaja-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 42,
+    "llm_tool_names": [
+      "get_setup_instructions",
+      "import_apikey_credentials",
+      "list_stored_credentials",
+      "remove_stored_credentials",
+      "list_connections"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/__fixtures__/accounting-workflow.ts); @modelcontextprotocol/sdk (src/__integration__/mcp-connection.integration.test.ts); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/mcp-compat.ts); @modelcontextprotocol/sdk (src/prompts.ts); @modelcontextprotocol/sdk (src/resources/dynamic-resources.ts); @modelcontextprotocol/sdk (src/resources/static-resources.ts); @modelcontextprotocol/sdk (src/tool-error.ts); @modelcontextprotocol/sdk (src/tool-response.ts); @modelcontextprotocol/sdk (src/tools/account-balance.ts); @modelcontextprotocol/sdk (src/tools/accounting-inbox.ts); @modelcontextprotocol/sdk (src/tools/aging-analysis.ts); @modelcontextprotocol/sdk (src/tools/analyze-unconfirmed.ts); @modelcontextprotocol/sdk (src/tools/annual-report.ts); @modelcontextprotocol/sdk (src/tools/bank-reconciliation.ts); @modelcontextprotocol/sdk (src/tools/camt-import.ts); @modelcontextprotocol/sdk (src/tools/crud/clients.ts); @modelcontextprotocol/sdk (src/tools/crud/journals.ts); @modelcontextprotocol/sdk (src/tools/crud/products.ts); @modelcontextprotocol/sdk (src/tools/crud/purchase-invoices.ts); @modelcontextprotocol/sdk (src/tools/crud/sale-invoices.ts); @modelcontextprotocol/sdk (src/tools/crud/transactions.ts); @modelcontextprotocol/sdk (src/tools/crud-tools.ts); @modelcontextprotocol/sdk (src/tools/currency-rounding.ts); @modelcontextprotocol/sdk (src/tools/document-audit.ts); @modelcontextprotocol/sdk (src/tools/estonian-tax.test.ts); @modelcontextprotocol/sdk (src/tools/estonian-tax.ts); @modelcontextprotocol/sdk (src/tools/financial-statements.ts); @modelcontextprotocol/sdk (src/tools/lightyear-investments.ts); @modelcontextprotocol/sdk (src/tools/pdf-workflow.ts); @modelcontextprotocol/sdk (src/tools/receipt-inbox.ts); @modelcontextprotocol/sdk (src/tools/recurring-invoices.ts); @modelcontextprotocol/sdk (src/tools/reference-data-tools.ts); @modelcontextprotocol/sdk (src/tools/wise-import.ts); @modelcontextprotocol/sdk (src/tools/workflow-recommendations.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/jared-goguen/gutenberg",
+    "source": "git+https://github.com/jared-goguen/gutenberg",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 8,
+    "llm_tool_names": [
+      "build",
+      "publish",
+      "lint",
+      "snapshot",
+      "list_projects"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (tests/helpers/server.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/cyanheads/docwriter-mcp-server",
+    "source": "git+https://github.com/cyanheads/docwriter-mcp-server",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 5,
+    "llm_tool_names": [
+      "docwriter_create_latex_document",
+      "docwriter_update_document_block",
+      "docwriter_search_replace",
+      "docwriter_compile_latex_to_pdf",
+      "docwriter_list_latex_documents"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/mcp-server/server.ts); @modelcontextprotocol/sdk (src/mcp-server/tools/compileLatexToPdf/registration.ts); @modelcontextprotocol/sdk (src/mcp-server/tools/createLatexDocument/registration.ts); @modelcontextprotocol/sdk (src/mcp-server/tools/listLatexDocuments/registration.ts); @modelcontextprotocol/sdk (src/mcp-server/tools/searchAndReplace/registration.ts); @modelcontextprotocol/sdk (src/mcp-server/tools/updateDocumentBlock/registration.ts); @modelcontextprotocol/sdk (src/mcp-server/transports/authentication/types.ts); @modelcontextprotocol/sdk (src/mcp-server/transports/httpTransport.ts); @modelcontextprotocol/sdk (src/mcp-server/transports/stdioTransport.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/geiserx/cashpilot-mcp",
+    "source": "git+https://github.com/GeiserX/cashpilot-mcp",
+    "language": "go",
+    "stratum": "npm-only",
+    "llm_tool_count": 10,
+    "llm_tool_names": [
+      "get_earnings_daily",
+      "get_earnings_history",
+      "get_service_logs",
+      "restart_service",
+      "stop_service"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (github.com/mark3labs/mcp-go (cmd/server/main.go); github.com/mark3labs/mcp-go (internal/resources/collector_alerts.go); github.com/mark3labs/mcp-go (internal/resources/earnings_breakdown.go); github.com/mark3labs/mcp-go (internal/resources/earnings_summary.go); github.com/mark3labs/mcp-go (internal/resources/fleet_summary.go); github.com/mark3labs/mcp-go (internal/resources/health_scores.go); github.com/mark3labs/mcp-go (internal/resources/resources_test.go); github.com/mark3labs/mcp-go (internal/resources/services_catalog.go); github.com/mark3labs/mcp-go (internal/resources/services_deployed.go); github.com/mark3labs/mcp-go (internal/resources/workers.go); github.com/mark3labs/mcp-go (internal/tools/deploy_service.go); github.com/mark3labs/mcp-go (internal/tools/earnings_daily.go); github.com/mark3labs/mcp-go (internal/tools/earnings_history.go); github.com/mark3labs/mcp-go (internal/tools/get_compose.go); github.com/mark3labs/mcp-go (internal/tools/remove_service.go); github.com/mark3labs/mcp-go (internal/tools/restart_service.go); github.com/mark3labs/mcp-go (internal/tools/service_logs.go); github.com/mark3labs/mcp-go (internal/tools/start_service.go); github.com/mark3labs/mcp-go (internal/tools/stop_service.go); github.com/mark3labs/mcp-go (internal/tools/tools_test.go); github.com/mark3labs/mcp-go (internal/tools/trigger_collection.go)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/dorukardahan/domain-search-mcp",
+    "source": "git+https://github.com/dorukardahan/domain-search-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 11,
+    "llm_tool_names": [
+      "search_domain",
+      "bulk_search",
+      "compare_registrars",
+      "suggest_domains",
+      "suggest_domains_smart"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/server.ts); @modelcontextprotocol/sdk (src/transports/http.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/solesius/click-clack",
+    "source": "git+https://github.com/Solesius/click-clack",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 16,
+    "llm_tool_names": [
+      "cc.post_clack",
+      "cc.claim_task",
+      "cc.report_progress",
+      "cc.complete_task",
+      "cc.query_task"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "git+https://github.com/matiasngf/mcp-fetch",
+    "source": "git+https://github.com/matiasngf/mcp-fetch",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 5,
+    "llm_tool_names": [
+      "fetch",
+      "get-rules",
+      "graphql",
+      "puppeteer",
+      "socket"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (__tests__/test-utils/mcp-client.ts); @modelcontextprotocol/sdk (package.json)) but no tools were extracted. This repo appears to be a wrapper around `xmcp` -- audit the upstream package for tool definitions."
+    ]
+  },
+  {
+    "name": "git+https://github.com/venizia-ai/ignis",
+    "source": "git+https://github.com/VENIZIA-AI/ignis",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 10,
+    "llm_tool_names": [
+      "searchDocs",
+      "getDocContent",
+      "listDocs",
+      "listCategories",
+      "getDocMetadata"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "git+https://github.com/dvcrn/mcp-server-siri-shortcuts",
+    "source": "git+https://github.com/dvcrn/mcp-server-siri-shortcuts",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 4,
+    "llm_tool_names": [
+      "list_shortcuts",
+      "open_shortcut",
+      "run_shortcut",
+      "DYNAMIC"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (index.ts); @modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (shortcuts.ts); @modelcontextprotocol/sdk (sse.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/fastmcp-me/mcp-db-bridge",
+    "source": "git+https://github.com/fastmcp-me/mcp-db-bridge",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "mysql_query"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (index.ts); @modelcontextprotocol/sdk (package.json)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/tinyfish-io/agentql-mcp",
+    "source": "git+https://github.com/tinyfish-io/agentql-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "extract-web-data"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/bethmaloney/rdl-mcp",
+    "source": "https://github.com/bethmaloney/rdl-mcp",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 15,
+    "llm_tool_names": [
+      "describe_rdl_report",
+      "get_rdl_datasets",
+      "get_rdl_parameters",
+      "get_rdl_columns",
+      "validate_rdl"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/daedalus/mcp-zabbix",
+    "source": "https://github.com/daedalus/mcp-zabbix",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "DYNAMIC"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (import mcp (src/mcp_zabbix/__init__.py); import mcp (src/mcp_zabbix/__main__.py); import fastmcp (src/mcp_zabbix/mcp.py); import mcp (tests/test_mcp.py)) but no tools were extracted. This repo appears to be a wrapper around `mcp_zabbix` -- audit the upstream package for tool definitions."
+    ]
+  },
+  {
+    "name": "github.com/rupinder2/mcp-orchestrator",
+    "source": "https://github.com/rupinder2/mcp-orchestrator",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 3,
+    "llm_tool_names": [
+      "tool_search",
+      "call_remote_tool",
+      "DYNAMIC"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp import (src/mcp_orchestrator/mcp_server.py); from mcp import (src/mcp_orchestrator/tools/router.py); from mcp import (tests/test_integration.py)) but no tools were extracted. This repo appears to be a wrapper around `mcp_orchestrator` -- audit the upstream package for tool definitions."
+    ]
+  },
+  {
+    "name": "github.com/leandropg19/cuba-memorys",
+    "source": "https://github.com/LeandroPG19/cuba-memorys",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 12,
+    "llm_tool_names": [
+      "cuba_alma",
+      "cuba_cronica",
+      "cuba_puente",
+      "cuba_faro",
+      "cuba_alarma"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/quantamixsol/graqle",
+    "source": "https://github.com/quantamixsol/graqle",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 84,
+    "llm_tool_names": [
+      "graq_lifecycle",
+      "graq_context",
+      "graq_inspect",
+      "graq_reason",
+      "graq_reason_batch"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/ivanantigravity-lgtm/seedance-polza-mcp-server",
+    "source": "https://github.com/ivanantigravity-lgtm/seedance-polza-mcp-server",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 4,
+    "llm_tool_names": [
+      "seedance_model_guide",
+      "seedance_create_video",
+      "seedance_get_status",
+      "seedance_wait_for_completion"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from fastmcp (seedance_polza_mcp_server/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/bv-venky/excalidraw-architect-mcp",
+    "source": "https://github.com/BV-Venky/excalidraw-architect-mcp",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 5,
+    "llm_tool_names": [
+      "create_diagram",
+      "mermaid_to_excalidraw",
+      "modify_diagram",
+      "get_diagram_info",
+      "export_diagram"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from fastmcp (src/excalidraw_mcp/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/norrietaylor/distillery",
+    "source": "https://github.com/norrietaylor/distillery",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 24,
+    "llm_tool_names": [
+      "distillery_store",
+      "distillery_store_batch",
+      "distillery_get",
+      "distillery_update",
+      "distillery_correct"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp import (src/distillery/eval/mcp_bridge.py); from fastmcp (src/distillery/mcp/auth.py); from mcp import (src/distillery/mcp/server.py); from mcp import (src/distillery/mcp/tools/_common.py); from mcp import (src/distillery/mcp/tools/_errors.py); from mcp import (src/distillery/mcp/tools/analytics.py); from mcp import (src/distillery/mcp/tools/classify.py); from mcp import (src/distillery/mcp/tools/configure.py); from mcp import (src/distillery/mcp/tools/crud.py); from mcp import (src/distillery/mcp/tools/feeds.py); from mcp import (src/distillery/mcp/tools/meta.py); from mcp import (src/distillery/mcp/tools/relations.py); from mcp import (src/distillery/mcp/tools/search.py); from fastmcp (tests/test_mcp_auth.py); from fastmcp (tests/test_mcp_coverage_gaps.py); from fastmcp (tests/test_mcp_http_transport.py); from fastmcp (tests/test_mcp_server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/bunnyf/pcb-mcp",
+    "source": "https://github.com/bunnyf/pcb-mcp",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 23,
+    "llm_tool_names": [
+      "list_projects",
+      "run_drc",
+      "run_erc",
+      "fill_zones",
+      "auto_route"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/microqueryhq/microquery-mcp",
+    "source": "https://github.com/microqueryhq/microquery-mcp",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 4,
+    "llm_tool_names": [
+      "authenticate",
+      "query",
+      "list_databases",
+      "get_quickstart"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/neogeweb3/code-health-suite",
+    "source": "https://github.com/neogeweb3/code-health-suite",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 28,
+    "llm_tool_names": [
+      "analyze_complexity",
+      "get_complexity_score",
+      "find_dead_code",
+      "security_scan",
+      "get_security_score"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/hylouis233/bibverify",
+    "source": "https://github.com/Hylouis233/bibverify",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 4,
+    "llm_tool_names": [
+      "doi_to_bibtex",
+      "rank_lookup_sources",
+      "explain_update_diff",
+      "verify_bib_file"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/huoshuiai42/huoshui-file-converter",
+    "source": "https://github.com/huoshuiai42/huoshui-file-converter",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 3,
+    "llm_tool_names": [
+      "file_get",
+      "convert_document",
+      "detect_format"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from fastmcp (path_analysis_report.py); from fastmcp (server/main.py); from fastmcp (test_path_handling.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/nveil-ai/nveil-toolkit",
+    "source": "https://github.com/nveil-ai/nveil-toolkit",
+    "language": "python",
+    "stratum": "pypi+registry",
+    "llm_tool_count": 4,
+    "llm_tool_names": [
+      "nveil_generate",
+      "nveil_render",
+      "nveil_describe",
+      "nveil_explain"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp import (src/nveil/cli/commands/mcp_server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/amazon-mq/mcp-server-rabbitmq",
+    "source": "https://github.com/amazon-mq/mcp-server-rabbitmq",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 57,
+    "llm_tool_names": [
+      "rabbitmq_broker_initialize_connection",
+      "rabbitmq_broker_initialize_connection_with_oauth",
+      "rabbitmq_broker_select",
+      "rabbitmq_broker_list_registered_brokers",
+      "rabbitmq_broker_get_guideline"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp import (example/agent_strands/agent.py); from mcp.server (src/rabbitmq/module.py); from fastmcp (src/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/ibm/mdm-mcp-server",
+    "source": "https://github.com/IBM/mdm-mcp-server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 5,
+    "llm_tool_names": [
+      "search_master_data",
+      "get_data_model",
+      "get_record",
+      "get_entity",
+      "get_records_entities_by_record_id"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (import mcp (src/common/auth/token_middleware.py); from fastmcp (src/common/core/base_service.py); from fastmcp (src/data_ms/entities/service.py); from fastmcp (src/data_ms/entities/tools.py); from fastmcp (src/data_ms/records/service.py); from fastmcp (src/data_ms/records/tools.py); from fastmcp (src/data_ms/search/service.py); from fastmcp (src/data_ms/search/tools.py); from fastmcp (src/model_ms/model/service.py); from fastmcp (src/model_ms/model/tools.py); from fastmcp (src/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/usemanusai/jaegis-raverse",
+    "source": "https://github.com/usemanusai/jaegis-RAVERSE",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 35,
+    "llm_tool_names": [
+      "disassemble_binary",
+      "generate_code_embedding",
+      "apply_patch",
+      "verify_patch",
+      "ingest_content"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/yugmatech/yt-mcp-server-odoo",
+    "source": "https://github.com/yugmatech/yt-mcp-server-odoo",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 11,
+    "llm_tool_names": [
+      "search_records",
+      "get_record",
+      "create_record",
+      "update_record",
+      "delete_record"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp.server (src/yt_mcp_server_odoo/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/yajieqi123/mcp-server-monday-qi",
+    "source": "https://github.com/YajieQi123/mcp-server-monday-qi",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 21,
+    "llm_tool_names": [
+      "monday-create-item",
+      "monday-get-items-by-id",
+      "monday-update-item",
+      "monday-get-board-columns",
+      "monday-get-board-groups"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp import (src/mcp_server_monday/board.py); from mcp import (src/mcp_server_monday/document.py); from mcp import (src/mcp_server_monday/item.py); from mcp.server (src/mcp_server_monday/server.py); from mcp.server (src/mcp_server_monday/tools.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/coreshub/mcp-server-coreshub",
+    "source": "https://github.com/coreshub/mcp-server-coreshub",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 8,
+    "llm_tool_names": [
+      "get_inference_service",
+      "get_inference_service_log",
+      "get_container_info",
+      "get_ssh_info",
+      "get_distributed_training"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp import (src/coreshub_mcp_server/base_plugin.py); from mcp.server (src/coreshub_mcp_server/server.py)) but no tools were extracted. This repo appears to be a wrapper around `coreshub_mcp_server` -- audit the upstream package for tool definitions."
+    ]
+  },
+  {
+    "name": "github.com/boostspace/boostspace-mcp-server",
+    "source": "https://github.com/boostspace/boostspace-mcp-server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "DYNAMIC"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp.server (src/boostspace_mcp/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/kionsoftware/kion-mcp",
+    "source": "https://github.com/kionsoftware/kion-mcp",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 38,
+    "llm_tool_names": [
+      "setup_kion_config",
+      "check_config_status",
+      "get_spend_report",
+      "get_accounts",
+      "get_label_key_id"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from fastmcp (src/kion_mcp/interaction/elicitation.py); from fastmcp (src/kion_mcp/middleware/auth.py); from fastmcp (src/kion_mcp/middleware/financial.py); from fastmcp (src/kion_mcp/server.py); from fastmcp (src/kion_mcp/server_management/routes.py); from fastmcp (src/kion_mcp/server_management/tool_manager.py); from fastmcp (src/kion_mcp/tools/account_tools.py); from fastmcp (src/kion_mcp/tools/cloud_access_role_tools.py); from fastmcp (src/kion_mcp/tools/config_tool.py); from fastmcp (src/kion_mcp/tools/custom_tools.py); from fastmcp (src/kion_mcp/tools/entity_tools.py); from fastmcp (src/kion_mcp/tools/label_tools.py); from fastmcp (src/kion_mcp/tools/spend_report.py); from fastmcp (src/kion_mcp/tools/user_info.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/nahtheking/semantic-model-mcp",
+    "source": "https://github.com/nahtheking/semantic-model-mcp",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 19,
+    "llm_tool_names": [
+      "get_server_version",
+      "list_powerbi_workspaces",
+      "list_powerbi_datasets",
+      "get_powerbi_workspace_id",
+      "list_powerbi_notebooks"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from fastmcp (server.py); from fastmcp (tools/bpa_tools.py); from fastmcp (tools/microsoft_learn_tools.py); from fastmcp (tools/powerbi_desktop_tools.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/maobui2907/vnstock-mcp-server",
+    "source": "https://github.com/MaoBui2907/vnstock-mcp-server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 36,
+    "llm_tool_names": [
+      "list_all_icb_industries",
+      "list_all_companies_with_details",
+      "get_company_overview",
+      "get_company_news",
+      "get_company_events"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from fastmcp (src/vnstock_mcp/server.py); from fastmcp (src/vnstock_mcp/tools/company_tools.py); from fastmcp (src/vnstock_mcp/tools/finance_tools.py); from fastmcp (src/vnstock_mcp/tools/fund_tools.py); from fastmcp (src/vnstock_mcp/tools/listing_tools.py); from fastmcp (src/vnstock_mcp/tools/misc_tools.py); from fastmcp (src/vnstock_mcp/tools/quote_tools.py); from fastmcp (src/vnstock_mcp/tools/trading_tools.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/etalab-ia/data_gouv_fr_mcp_server",
+    "source": "https://github.com/etalab-ia/data_gouv_fr_mcp_server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "search_datasets"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp.server (data_gouv_mcp_server/main.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/ibm/ibm-watsonxdata-dl-retrieval-mcp-server",
+    "source": "https://github.com/IBM/ibm-watsonxdata-dl-retrieval-mcp-server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "DYNAMIC"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (import mcp (src/ibm_watsonxdata_dl_retrieval_mcp_server/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/br0ski777/text-classifier-x402",
+    "source": "https://github.com/Br0ski777/text-classifier-x402",
+    "language": "typescript",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "text_classify_content"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/silly-geese/quality-qr-mcp",
+    "source": "https://github.com/silly-geese/quality-qr-mcp",
+    "language": "unknown",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 6,
+    "llm_tool_names": [
+      "quality_qr_create",
+      "quality_qr_list",
+      "quality_qr_get",
+      "quality_qr_update",
+      "quality_qr_delete"
+    ],
+    "warning_bucket": "language_unknown",
+    "warnings": [
+      "Could not detect primary language. Tool extraction may be incomplete.",
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/br0ski777/image-resize-x402",
+    "source": "https://github.com/Br0ski777/image-resize-x402",
+    "language": "typescript",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "media_resize_image"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/your-ko/mcp-k8s-ro",
+    "source": "https://github.com/your-ko/mcp-k8s-ro",
+    "language": "go",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 7,
+    "llm_tool_names": [
+      "k8s_list_resources",
+      "k8s_describe_resource",
+      "k8s_list_resource_types",
+      "k8s_get_logs",
+      "k8s_get_events"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/br0ski777/person-enrichment-x402",
+    "source": "https://github.com/Br0ski777/person-enrichment-x402",
+    "language": "typescript",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "person_enrich_from_email"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/tapetide-hq/tapetide-stock-research-mcp",
+    "source": "https://github.com/Tapetide-hq/tapetide-stock-research-mcp",
+    "language": "typescript",
+    "stratum": "npm+registry",
+    "llm_tool_count": 4,
+    "llm_tool_names": [
+      "search_stocks",
+      "get_company_profile",
+      "get_stock_events",
+      "get_stock_ownership"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/geiserx/pumperly-mcp",
+    "source": "https://github.com/GeiserX/pumperly-mcp",
+    "language": "go",
+    "stratum": "npm+registry",
+    "llm_tool_count": 5,
+    "llm_tool_names": [
+      "find_nearest_stations",
+      "get_stations_in_area",
+      "calculate_route",
+      "find_route_stations",
+      "geocode"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (github.com/mark3labs/mcp-go (cmd/server/main.go); github.com/mark3labs/mcp-go (internal/resources/config.go); github.com/mark3labs/mcp-go (internal/resources/config_test.go); github.com/mark3labs/mcp-go (internal/resources/exchange_rates.go); github.com/mark3labs/mcp-go (internal/resources/exchange_rates_test.go); github.com/mark3labs/mcp-go (internal/resources/stats.go); github.com/mark3labs/mcp-go (internal/resources/stats_test.go); github.com/mark3labs/mcp-go (internal/tools/calculate_route.go); github.com/mark3labs/mcp-go (internal/tools/calculate_route_test.go); github.com/mark3labs/mcp-go (internal/tools/geocode.go); github.com/mark3labs/mcp-go (internal/tools/geocode_test.go); github.com/mark3labs/mcp-go (internal/tools/helpers.go); github.com/mark3labs/mcp-go (internal/tools/helpers_test.go); github.com/mark3labs/mcp-go (internal/tools/nearest_stations.go); github.com/mark3labs/mcp-go (internal/tools/nearest_stations_test.go); github.com/mark3labs/mcp-go (internal/tools/route_stations.go); github.com/mark3labs/mcp-go (internal/tools/route_stations_test.go); github.com/mark3labs/mcp-go (internal/tools/stations_in_area.go); github.com/mark3labs/mcp-go (internal/tools/stations_in_area_test.go)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/sharminsirajudeen/drengr-community",
+    "source": "https://github.com/SharminSirajudeen/drengr-community",
+    "language": "unknown",
+    "stratum": "npm+registry",
+    "llm_tool_count": 3,
+    "llm_tool_names": [
+      "drengr_look",
+      "drengr_do",
+      "drengr_query"
+    ],
+    "warning_bucket": "language_unknown",
+    "warnings": [
+      "Could not detect primary language. Tool extraction may be incomplete.",
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "git+https://github.com/msegoviadev/api-mind-mcp",
+    "source": "git+https://github.com/msegoviadev/api-mind-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 4,
+    "llm_tool_names": [
+      "list_apis",
+      "list_endpoints",
+      "get_endpoint_schema",
+      "get_call_context"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/tools/get-call-context.ts); @modelcontextprotocol/sdk (src/tools/get-endpoint-schema.ts); @modelcontextprotocol/sdk (src/tools/list-apis.ts); @modelcontextprotocol/sdk (src/tools/list-endpoints.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/klodr/mercury-invoicing-mcp",
+    "source": "git+https://github.com/klodr/mercury-invoicing-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 35,
+    "llm_tool_names": [
+      "mercury_list_accounts",
+      "mercury_get_account",
+      "mercury_list_cards",
+      "mercury_list_categories",
+      "mercury_list_credit_accounts"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (scripts/prod-readonly-test.mjs); @modelcontextprotocol/sdk (scripts/sandbox-test.mjs); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/prompts/credit.ts); @modelcontextprotocol/sdk (src/prompts/index.ts); @modelcontextprotocol/sdk (src/prompts/invoicing.ts); @modelcontextprotocol/sdk (src/prompts/recipes.ts); @modelcontextprotocol/sdk (src/server.ts); @modelcontextprotocol/sdk (src/tools/_shared.ts); @modelcontextprotocol/sdk (src/tools/accounts.ts); @modelcontextprotocol/sdk (src/tools/cards.ts); @modelcontextprotocol/sdk (src/tools/categories.ts); @modelcontextprotocol/sdk (src/tools/credit.ts); @modelcontextprotocol/sdk (src/tools/customers.ts); @modelcontextprotocol/sdk (src/tools/index.ts); @modelcontextprotocol/sdk (src/tools/invoices.ts); @modelcontextprotocol/sdk (src/tools/organization.ts); @modelcontextprotocol/sdk (src/tools/recipients.ts); @modelcontextprotocol/sdk (src/tools/statements.ts); @modelcontextprotocol/sdk (src/tools/transactions.ts); @modelcontextprotocol/sdk (src/tools/treasury.ts); @modelcontextprotocol/sdk (src/tools/webhooks.ts); @modelcontextprotocol/sdk (test/credit-prompts.test.ts); @modelcontextprotocol/sdk (test/integration.test.ts); @modelcontextprotocol/sdk (test/invoicing-prompts.test.ts); @modelcontextprotocol/sdk (test/prompts.test.ts); @modelcontextprotocol/sdk (test/server.test.ts); @modelcontextprotocol/sdk (test/tools.test.ts); @modelcontextprotocol/sdk (test/webhooks.test.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/sh3ll3x3c/native-devtools-mcp",
+    "source": "git+https://github.com/sh3ll3x3c/native-devtools-mcp",
+    "language": "javascript",
+    "stratum": "npm-only",
+    "llm_tool_count": 18,
+    "llm_tool_names": [
+      "take_screenshot",
+      "find_text",
+      "click",
+      "type_text",
+      "find_image"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "git+https://github.com/lcm2m/lcm2m-caddis-mcp",
+    "source": "git+https://github.com/LCM2M/lcm2m-caddis-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 28,
+    "llm_tool_names": [
+      "caddis_get_company",
+      "caddis_list_devices",
+      "caddis_get_device",
+      "caddis_list_equipment",
+      "caddis_get_equipment"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/tools/composite/batch.ts); @modelcontextprotocol/sdk (src/tools/composite/index.ts); @modelcontextprotocol/sdk (src/tools/index.ts); @modelcontextprotocol/sdk (src/tools/registry.ts); @modelcontextprotocol/sdk (src/tools/schemas.ts); @modelcontextprotocol/sdk (src/tools/wrappers/alarms.ts); @modelcontextprotocol/sdk (src/tools/wrappers/company.ts); @modelcontextprotocol/sdk (src/tools/wrappers/devices.ts); @modelcontextprotocol/sdk (src/tools/wrappers/equipment.ts); @modelcontextprotocol/sdk (src/tools/wrappers/orgunits.ts); @modelcontextprotocol/sdk (src/tools/wrappers/runs.ts); @modelcontextprotocol/sdk (src/tools/wrappers/statusreasons.ts); @modelcontextprotocol/sdk (src/tools/wrappers/taggroups.ts); @modelcontextprotocol/sdk (src/tools/wrappers/tags.ts)) but no tools were extracted. This repo appears to be a wrapper around `zod` -- audit the upstream package for tool definitions."
+    ]
+  },
+  {
+    "name": "git+https://github.com/cyberash-dev/moex-mcp",
+    "source": "git+https://github.com/cyberash-dev/moex-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 20,
+    "llm_tool_names": [
+      "search_securities",
+      "get_security_info",
+      "get_security_indices",
+      "get_market_data",
+      "get_orderbook"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/index.ts); @modelcontextprotocol/sdk (src/server.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "git+https://github.com/abrahamoo/security-mcp",
+    "source": "git+https://github.com/AbrahamOO/security-mcp",
+    "language": "typescript",
+    "stratum": "npm-only",
+    "llm_tool_count": 27,
+    "llm_tool_names": [
+      "security.start_review",
+      "security.attest_review",
+      "security.run_pr_gate",
+      "repo.read_file",
+      "repo.search"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (@modelcontextprotocol/sdk (package.json); @modelcontextprotocol/sdk (src/mcp/server.ts)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/praveenc/mcp-server-builder",
+    "source": "https://github.com/praveenc/mcp-server-builder",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 2,
+    "llm_tool_names": [
+      "search_mcp_docs",
+      "fetch_mcp_doc"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp.server (src/mcp_server_builder/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/ramarivera/pal-mcp-server",
+    "source": "https://github.com/ramarivera/pal-mcp-server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 18,
+    "llm_tool_names": [
+      "chat",
+      "clink",
+      "thinkdeep",
+      "planner",
+      "consensus"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from mcp.server (server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/azhang/qdrant-llamaindex-mcp-server",
+    "source": "https://github.com/azhang/qdrant-llamaindex-mcp-server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 17,
+    "llm_tool_names": [
+      "qdrant-find",
+      "qdrant-get-point",
+      "qdrant-get-collections",
+      "qdrant-get-collection-details",
+      "qdrant-get-collection-count"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (import mcp (src/mcp_server_qdrant/main.py); from fastmcp (src/mcp_server_qdrant/mcp_server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/h2oai/h2ogpte-mcp-server",
+    "source": "https://github.com/h2oai/h2ogpte-mcp-server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 37,
+    "llm_tool_names": [
+      "upload_file",
+      "update_collection_thumbnail",
+      "create_collection",
+      "list_collections",
+      "update_collection"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from fastmcp (src/h2ogpte_mcp_server/server.py); from fastmcp (src/h2ogpte_mcp_server/tools.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/aiagentkarl/earthquake-mcp-server",
+    "source": "https://github.com/AiAgentKarl/earthquake-mcp-server",
+    "language": "python",
+    "stratum": "pypi-only",
+    "llm_tool_count": 8,
+    "llm_tool_names": [
+      "tool_get_recent_earthquakes",
+      "tool_search_earthquakes",
+      "tool_get_significant_earthquakes",
+      "tool_earthquakes_near_location",
+      "tool_get_seismic_summary"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (from fastmcp (src/server.py)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/br0ski777/email-send-x402",
+    "source": "https://github.com/Br0ski777/email-send-x402",
+    "language": "typescript",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "email_send_message"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/topofgames/la-ei-mcp",
+    "source": "https://github.com/topofgames/la-ei-mcp",
+    "language": "unknown",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 11,
+    "llm_tool_names": [
+      "cauta-anunturi",
+      "detalii-anunt",
+      "obtine-categorii",
+      "obtine-locatii",
+      "statistici-anunturi"
+    ],
+    "warning_bucket": "language_unknown",
+    "warnings": [
+      "Could not detect primary language. Tool extraction may be incomplete.",
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/synapbus/synapbus",
+    "source": "https://github.com/synapbus/synapbus",
+    "language": "go",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 17,
+    "llm_tool_names": [
+      "send_message",
+      "read_inbox",
+      "claim_messages",
+      "mark_done",
+      "search_messages"
+    ],
+    "warning_bucket": "mcp_framework_detected_no_extraction",
+    "warnings": [
+      "MCP framework detected (github.com/mark3labs/mcp-go (internal/mcp/channel_tools_test.go); github.com/mark3labs/mcp-go (internal/mcp/goals_tools.go); github.com/mark3labs/mcp-go (internal/mcp/injection_core_test.go); github.com/mark3labs/mcp-go (internal/mcp/injection_e2e_test.go); github.com/mark3labs/mcp-go (internal/mcp/injection_wrap.go); github.com/mark3labs/mcp-go (internal/mcp/injection_wrap_test.go); github.com/mark3labs/mcp-go (internal/mcp/memory_tools.go); github.com/mark3labs/mcp-go (internal/mcp/memory_tools_test.go); github.com/mark3labs/mcp-go (internal/mcp/prompts.go); github.com/mark3labs/mcp-go (internal/mcp/prompts_test.go); github.com/mark3labs/mcp-go (internal/mcp/server.go); github.com/mark3labs/mcp-go (internal/mcp/server_test.go); github.com/mark3labs/mcp-go (internal/mcp/tools.go); github.com/mark3labs/mcp-go (internal/mcp/tools_hybrid.go); github.com/mark3labs/mcp-go (internal/mcp/tools_test.go)) but no tools were extracted. This server likely uses a registration pattern not covered by automated extraction -- manual review required."
+    ]
+  },
+  {
+    "name": "github.com/br0ski777/solana-fees-x402",
+    "source": "https://github.com/Br0ski777/solana-fees-x402",
+    "language": "typescript",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 1,
+    "llm_tool_names": [
+      "solana_get_priority_fees"
+    ],
+    "warning_bucket": "no_framework_detected",
+    "warnings": [
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  },
+  {
+    "name": "github.com/jmtroller/nhd-mcp-public-documentation",
+    "source": "https://github.com/jmtroller/nhd-mcp-public-documentation",
+    "language": "unknown",
+    "stratum": "other-ecosystem",
+    "llm_tool_count": 6,
+    "llm_tool_names": [
+      "search_facilities",
+      "get_facility",
+      "get_facility_ownership",
+      "search_owners",
+      "get_owner"
+    ],
+    "warning_bucket": "language_unknown",
+    "warnings": [
+      "Could not detect primary language. Tool extraction may be incomplete.",
+      "No tools extracted and no MCP framework imports detected. This may not be an MCP server, or it uses an unrecognized framework."
+    ]
+  }
+]

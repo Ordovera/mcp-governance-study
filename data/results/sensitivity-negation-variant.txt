@@ -1,0 +1,49 @@
+==============================================================================
+SENSITIVITY: primary (raw) vs negation/context-aware variant (downgrade-only)
+==============================================================================
+  corpus: evidence_corpus_n1000_post_phaseg.json
+  tools downgraded: 22
+
+  sensitive tools (all extracted)              375  ->    353
+    by category raw: {'autonomy': 158, 'confidentiality': 211, 'integrity': 6}
+    by category var: {'autonomy': 145, 'confidentiality': 202, 'integrity': 6}
+  sensitive-read tools                         198  ->    180
+  source-available servers w/ sensitive-read    91  ->     82
+
+  sensitive-read-without-logging (source-available):
+    raw:     72/91 = 79.1%
+    variant: 67/82 = 81.7%
+
+  downgrades by guard (a tool may trigger >1):
+    access-gate    9
+    masked         6
+    negation       5
+    generic-store  2
+
+  all 22 downgraded tools:
+    [read ] billing                                    (github.com/embeddedlayers/mcp-analytics)  -> billing:access-gate
+    [read ] board_read                                 (git+https://github.com/lightningfaucet/lightning-wallet-mcp)  -> payment:negation
+    [read ] clawswap_quote                             (github.com/wartech9/clawswap-mcp)  -> payment:negation
+    [read ] clawswap_quote                             (git+https://github.com/wartech9/clawswap-mcp)  -> payment:negation
+    [write] create_checkout                            (github.com/alainsvrd/borealhost-mcp)  -> purchase:access-gate
+    [read ] credentials_list                           (github.com/aibtcdev/aibtc-mcp-server)  -> credential:masked
+    [unknown] generate_brand_kit                         (github.com/rakesh1002/namemyapp-mcp)  -> purchase:access-gate
+    [unknown] generate_legal_docs                        (github.com/rakesh1002/namemyapp-mcp)  -> purchase:access-gate
+    [read ] generate_logo                              (github.com/rakesh1002/namemyapp-mcp)  -> purchase:access-gate
+    [read ] generate_pdf                               (git+https://github.com/himaan1998y/pretext-pdf-mcp)  -> invoice:negation
+    [write] generate_social_kit                        (github.com/rakesh1002/namemyapp-mcp)  -> purchase:access-gate
+    [read ] get_hiro_api_key                           (github.com/aibtcdev/aibtc-mcp-server)  -> api_key:masked, environment+variable:masked
+    [read ] get_smart_hook_env_vars                    (git+https://github.com/onelogin/onelogin-mcp)  -> environment+variable:masked
+    [read ] get_ticker_performance                     (git+https://github.com/signalscope/cursor-plugin)  -> payment:access-gate
+    [read ] get_upgrade_url                            (github.com/codeofaxel/kiln)  -> purchase:access-gate
+    [read ] komodo_variable_list                       (github.com/mp-tool/komodo-mcp-server)  -> secret:masked
+    [read ] list_global_environment_variables          (github.com/deployhq/deployhq-mcp-server)  -> environment+variable:masked
+    [read ] list_resources                             (github.com/synapbus/synapbus)  -> secret:masked
+    [read ] memory_store                               (git+https://github.com/ruvnet/claude-flow)  -> config+key:generic-store
+    [read ] memory_store                               (git+https://github.com/ruvnet/claude-flow)  -> config+key:generic-store
+    [read ] security_quick_scan                        (git+https://github.com/nahisaho/musubix)  -> secret:negation
+    [read ] totalreclaw_status                         (git+https://github.com/p-diogo/totalreclaw)  -> billing:access-gate
+
+  ACCEPTANCE:
+    documented FPs downgraded: ['board_read', 'credentials_list', 'generate_social_kit', 'list_global_environment_variables', 'memory_store', 'security_quick_scan']
+    PASS -- all documented FPs downgraded; all genuine positives kept

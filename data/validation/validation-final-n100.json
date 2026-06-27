@@ -1,0 +1,1028 @@
+{
+  "validationDate": "2026-05-12",
+  "decisionRule": "Persistent-effect: if calling the tool twice produces a different world state than not calling it at all, classify as write. Persistence requires surviving process termination.",
+  "sample": {
+    "total": 100,
+    "disagreements": 43,
+    "agreements": 57
+  },
+  "agreement": {
+    "heuristic_vs_human": {
+      "n": 75,
+      "agreement": 0.76,
+      "kappa": 0.518
+    },
+    "llm_vs_human": {
+      "n": 100,
+      "agreement": 0.97,
+      "kappa": 0.94
+    },
+    "heuristic_vs_llm": {
+      "n": 75,
+      "agreement": 0.76,
+      "kappa": 0.52
+    }
+  },
+  "tools": [
+    {
+      "num": 1,
+      "name": "xpath_save_screenshot",
+      "repo": "tanbro/uiautomator2-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 2,
+      "name": "preview_lut",
+      "repo": "lucamarien/rawtherapee-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 3,
+      "name": "export_multi_device",
+      "repo": "lucamarien/rawtherapee-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 4,
+      "name": "show_toast",
+      "repo": "tanbro/uiautomator2-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 5,
+      "name": "preview_with_adjustments",
+      "repo": "lucamarien/rawtherapee-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 6,
+      "name": "zen_scroll",
+      "repo": "sh6drack/zen-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 7,
+      "name": "subscribe_feed",
+      "repo": "QuartzUnit/feedkit",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 8,
+      "name": "index_cortex_docs",
+      "repo": "clarkemn/cortex-cloud-docs-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 9,
+      "name": "cancel_flight",
+      "repo": "markswendsen-code/mcp-southwest",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 10,
+      "name": "preview_raw",
+      "repo": "lucamarien/rawtherapee-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 11,
+      "name": "swap_tokens",
+      "repo": "ahmetenesdur/starkfi",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 12,
+      "name": "select_flight",
+      "repo": "markswendsen-code/mcp-southwest",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 13,
+      "name": "deposit_trx",
+      "repo": "Hovsteder/merx-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 14,
+      "name": "xpath_set_text",
+      "repo": "tanbro/uiautomator2-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 15,
+      "name": "analyze_cnv",
+      "repo": "cafferychen777/ChatSpatial",
+      "heuristic": "read",
+      "enhanced": "write",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": "readOnlyHint=false, idempotentHint=true, openWorldHint=false"
+    },
+    {
+      "num": 16,
+      "name": "batch_process",
+      "repo": "lucamarien/rawtherapee-mcp-server",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 17,
+      "name": "disconnect_all",
+      "repo": "tanbro/uiautomator2-mcp-server",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 18,
+      "name": "outlook_rename_folder",
+      "repo": "mpalermiti/outlook-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 19,
+      "name": "outlook_move_message",
+      "repo": "mpalermiti/outlook-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 20,
+      "name": "outlook_reply",
+      "repo": "mpalermiti/outlook-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 21,
+      "name": "pg_switch_database",
+      "repo": "itunified-io/mcp-postgres",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 22,
+      "name": "agent_changes_accept",
+      "repo": "mua-vtuber/Agestra",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 23,
+      "name": "customer_engagement",
+      "repo": "dingdawg/dingdawg-agent-1",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 24,
+      "name": "book_appointment",
+      "repo": "dingdawg/dingdawg-agent-1",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 25,
+      "name": "cc_cleanup_file",
+      "repo": "ellmos-ai/ellmos-codecommander-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 26,
+      "name": "process_raw",
+      "repo": "lucamarien/rawtherapee-mcp-server",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 27,
+      "name": "claim_rewards",
+      "repo": "ahmetenesdur/starkfi",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 28,
+      "name": "compose_branded",
+      "repo": "Yaksh36/mcp-server-bedrock-image",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 29,
+      "name": "structured",
+      "repo": "hampsterx/claude-mcp-bridge",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 30,
+      "name": "interpolate_profiles",
+      "repo": "lucamarien/rawtherapee-mcp-server",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 31,
+      "name": "cc_diff_files",
+      "repo": "ellmos-ai/ellmos-codecommander-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 32,
+      "name": "trending_coins",
+      "repo": "Tsubaki414/toolfi",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 33,
+      "name": "estimate_contract_call",
+      "repo": "Hovsteder/merx-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 34,
+      "name": "measure_behavior",
+      "repo": "attestedintelligence/aga-mcp-server",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 35,
+      "name": "calc_delivery",
+      "repo": "theYahia/boxberry-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 36,
+      "name": "validate_config",
+      "repo": "JanDeDobbeleer/oh-my-posh",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 37,
+      "name": "cc_regex_test",
+      "repo": "ellmos-ai/ellmos-codecommander-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 38,
+      "name": "outlook_download_attachment",
+      "repo": "mpalermiti/outlook-mcp",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 39,
+      "name": "delay",
+      "repo": "tanbro/uiautomator2-mcp-server",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 40,
+      "name": "ping",
+      "repo": "hampsterx/claude-mcp-bridge",
+      "heuristic": "unknown",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 41,
+      "name": "aggregate",
+      "repo": "CSOAI-ORG/csv-analytics-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 42,
+      "name": "manage_workspace",
+      "repo": "aaronsb/jira-cloud",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 43,
+      "name": "pg_extension_list",
+      "repo": "itunified-io/mcp-postgres",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 44,
+      "name": "can_create_child",
+      "repo": "srgplus/srgplus-mcp",
+      "heuristic": "write",
+      "enhanced": "read",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": "readOnlyHint=true, destructiveHint=false"
+    },
+    {
+      "num": 45,
+      "name": "load_csv",
+      "repo": "CSOAI-ORG/csv-analytics-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 46,
+      "name": "whats_new",
+      "repo": "Semicolon-D/model-advisor-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 47,
+      "name": "estimate_transaction_cost",
+      "repo": "Hovsteder/merx-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 48,
+      "name": "convert_address",
+      "repo": "Hovsteder/merx-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 49,
+      "name": "pivot_table",
+      "repo": "CSOAI-ORG/csv-analytics-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 50,
+      "name": "get_invitation_link",
+      "repo": "srgplus/srgplus-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": "readOnlyHint=true, destructiveHint=false"
+    },
+    {
+      "num": 51,
+      "name": "search_procurement",
+      "repo": "xmpuspus/ph-civic-data-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 52,
+      "name": "get_reservation",
+      "repo": "markswendsen-code/mcp-southwest",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 53,
+      "name": "describe_columns",
+      "repo": "CSOAI-ORG/csv-analytics-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 54,
+      "name": "search_cortex_docs",
+      "repo": "clarkemn/cortex-cloud-docs-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 55,
+      "name": "get_record",
+      "repo": "parth-unjiya/odoo-mcp-gateway",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 56,
+      "name": "get_cache_info",
+      "repo": "apiarya/wemo-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 57,
+      "name": "get_my_workflows",
+      "repo": "ibm/data-intelligence-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 58,
+      "name": "analyze_prices",
+      "repo": "Hovsteder/merx-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 59,
+      "name": "query_data",
+      "repo": "CSOAI-ORG/csv-analytics-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 60,
+      "name": "workboard_get_teams_tool",
+      "repo": "crunchtools/mcp-workboard",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 61,
+      "name": "get_hub_profile_by_username",
+      "repo": "srgplus/srgplus-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": "readOnlyHint=true, destructiveHint=false"
+    },
+    {
+      "num": 62,
+      "name": "get_skill",
+      "repo": "Codehagen/helpbase",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 63,
+      "name": "list_workspaces",
+      "repo": "srgplus/srgplus-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": "readOnlyHint=true, destructiveHint=false"
+    },
+    {
+      "num": 64,
+      "name": "get_device_status",
+      "repo": "apiarya/wemo-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 65,
+      "name": "get_receipts",
+      "repo": "attestedintelligence/aga-mcp-server",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 66,
+      "name": "filter_hub_profiles",
+      "repo": "srgplus/srgplus-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": "readOnlyHint=true, destructiveHint=false"
+    },
+    {
+      "num": 67,
+      "name": "get_air_quality",
+      "repo": "xmpuspus/ph-civic-data-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 68,
+      "name": "analyze_jira_issues",
+      "repo": "aaronsb/jira-cloud",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 69,
+      "name": "manage_jira_project",
+      "repo": "aaronsb/jira-cloud",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 70,
+      "name": "get_prices",
+      "repo": "Hovsteder/merx-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 71,
+      "name": "query_hashrate",
+      "repo": "srotzin/hive-mcp-mos",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 72,
+      "name": "zen_list_pages",
+      "repo": "sh6drack/zen-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 73,
+      "name": "compare_models",
+      "repo": "Semicolon-D/model-advisor-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 74,
+      "name": "download_lab_topology",
+      "repo": "xorrkaz/cml-mcp",
+      "heuristic": "read",
+      "enhanced": "",
+      "llm_reeval": "read",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 75,
+      "name": "pg_connect",
+      "repo": "itunified-io/mcp-postgres",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "read",
+      "annotations": ""
+    },
+    {
+      "num": 76,
+      "name": "create_template",
+      "repo": "nakulben/whatsapp-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 77,
+      "name": "stake_tokens",
+      "repo": "ahmetenesdur/starkfi",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 78,
+      "name": "outlook_create_folder",
+      "repo": "mpalermiti/outlook-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 79,
+      "name": "contextkeeper_add_decision",
+      "repo": "TheRealDataBoss/workbench",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 80,
+      "name": "contextkeeper_update_task",
+      "repo": "TheRealDataBoss/workbench",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 81,
+      "name": "pg_upsert",
+      "repo": "itunified-io/mcp-postgres",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 82,
+      "name": "delete_template",
+      "repo": "nakulben/whatsapp-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 83,
+      "name": "start_scrcpy",
+      "repo": "tanbro/uiautomator2-mcp-server",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 84,
+      "name": "create_channel",
+      "repo": "srgplus/srgplus-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": "readOnlyHint=false, destructiveHint=false"
+    },
+    {
+      "num": 85,
+      "name": "add_route",
+      "repo": "Next2D/next2d-development-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 86,
+      "name": "batch_execute",
+      "repo": "ahmetenesdur/starkfi",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 87,
+      "name": "delete_invitation",
+      "repo": "srgplus/srgplus-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": "readOnlyHint=false, destructiveHint=true"
+    },
+    {
+      "num": 88,
+      "name": "outlook_update_task",
+      "repo": "mpalermiti/outlook-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 89,
+      "name": "update_permission_group",
+      "repo": "srgplus/srgplus-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": "readOnlyHint=false, destructiveHint=false"
+    },
+    {
+      "num": 90,
+      "name": "screen_record_start",
+      "repo": "tanbro/uiautomator2-mcp-server",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 91,
+      "name": "call_contract",
+      "repo": "Hovsteder/merx-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 92,
+      "name": "agent_debate_create",
+      "repo": "mua-vtuber/Agestra",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 93,
+      "name": "outlook_delete_message",
+      "repo": "mpalermiti/outlook-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 94,
+      "name": "remove_background",
+      "repo": "Yaksh36/mcp-server-bedrock-image",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 95,
+      "name": "send_bulk_template_messages",
+      "repo": "nakulben/whatsapp-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 96,
+      "name": "add_text_annotation",
+      "repo": "xorrkaz/cml-mcp",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 97,
+      "name": "supply_assets",
+      "repo": "ahmetenesdur/starkfi",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 98,
+      "name": "agent_debate_start",
+      "repo": "mua-vtuber/Agestra",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 99,
+      "name": "create_ticket",
+      "repo": "parth-unjiya/odoo-mcp-gateway",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    },
+    {
+      "num": 100,
+      "name": "create_task",
+      "repo": "evalor/Dida365MCP",
+      "heuristic": "write",
+      "enhanced": "",
+      "llm_reeval": "write",
+      "human": "write",
+      "annotations": ""
+    }
+  ]
+}

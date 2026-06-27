@@ -1,0 +1,34 @@
+# --- Heavy evidence corpus: archived on Zenodo, never committed to git ---
+evidence_corpus_*.json
+evidence_1000_*
+evidence_sample_*
+canonical-snapshot-*.json
+verify-*.json
+verify-results-*.json
+remote-endpoints*.json
+remote-registry-names.json
+sample-*.json
+stratum-map-*.json
+replacements*.json
+reeval-*.json
+failed_servers_*.json
+phase-*-checkpoint.json
+
+# --- Private planning / engagement material: never publish ---
+context/
+review-engagement/
+*-runbook.md
+upwork-*.md
+
+# --- macOS ---
+.DS_Store
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Node (if any tooling added later) ---
+node_modules/
+dist/
