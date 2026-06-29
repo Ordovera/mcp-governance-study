@@ -184,7 +184,11 @@ assoc("tool count >10 vs 1-10", lambda s: n_tools(s) > 10) # note: among with-to
 assoc("has tools vs zero", lambda s: n_tools(s) > 0)
 assoc("has sensitive tools", has_sens)
 assoc("has authentication", lambda s: s.get("flags", {}).get("hasAuth"))
-assoc("registry presence", lambda s: s.get("stratum") in ("npm+registry", "pypi+registry"))
+# registry presence = listed in the MCP Registry. The "other-ecosystem" stratum is
+# registry-sourced (every such server carries sources=['mcp-registry']), so it belongs
+# in the registry-present group. Excluding it understated registry-present and produced
+# a spurious "registry -> higher gaps" artifact; corrected here -> 70% vs 72%, chi2=0.3, OR=0.91 (n.s.).
+assoc("registry presence", lambda s: s.get("stratum") in ("npm+registry", "pypi+registry", "other-ecosystem"))
 assoc("TypeScript vs Python", lambda s: s.get("language") == "typescript")
 
 # ---- 4.4 strata ----

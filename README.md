@@ -2,8 +2,8 @@
 
 Reproduction package for *Measuring Agent Governance Posture: Accountability Gaps in MCP Servers and Implications for Single- and Multi-Agent Governance* — an empirical study of governance posture across 945 Model Context Protocol (MCP) servers drawn from a population of 17,563.
 
-- **Paper:** Zenodo DOI 10.5281/zenodo.PPPPPPPP (manuscript deposit; assigned on release). Optional mirror: arXiv:XXXX.XXXXX (if/when submitted).
-- **Data:** Zenodo DOI 10.5281/zenodo.XXXXXXXX (evidence corpus + artifacts; a separate Zenodo deposit — see `data/README.md`).
+- **Paper:** Zenodo DOI 10.5281/zenodo.20972251 (manuscript deposit). Optional mirror: arXiv:XXXX.XXXXX (if/when submitted).
+- **Data:** Zenodo DOI 10.5281/zenodo.20970604 (evidence corpus + artifacts; a separate Zenodo deposit — see `data/README.md`).
 - **Code:** this GitHub repository, referenced by URL + release tag; not archived to Zenodo.
 - **Analysis instrument:** [`cc-mcp-audit`](https://www.npmjs.com/package/cc-mcp-audit) (npm) — the deterministic + LLM-verified MCP analysis pipeline used to produce the evidence corpus. This repository consumes its output; it does not vendor the tool. Pin the version used for the study in `data/README.md`.
 

@@ -10,7 +10,7 @@ license: CC-BY-4.0
 repository-code: "https://github.com/ordovera/mcp-governance-study"
 # DOI of the archived DATA deposit on Zenodo (separate from the paper deposit;
 # the code itself is GitHub-only and is not archived to Zenodo):
-doi: 10.5281/zenodo.XXXXXXXX
+doi: 10.5281/zenodo.20970604
 version: "1.0.0"
 date-released: 2026-06-26
 preferred-citation:
@@ -22,6 +22,6 @@ preferred-citation:
       affiliation: Ordovera Advisory
   year: 2026
   # DOI of the paper's Zenodo manuscript deposit (the citable paper):
-  doi: 10.5281/zenodo.PPPPPPPP
+  doi: 10.5281/zenodo.20972251
   # Optional arXiv mirror identifier, if/when submitted:
   notes: "arXiv:XXXX.XXXXX"

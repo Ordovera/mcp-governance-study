@@ -21,10 +21,10 @@ file-size limits).
 - `results/` — generated text outputs cited in the paper (gap robustness,
   post-G reconciliation, sensitivity negation-variant bound, paper statistics).
 
-## On Zenodo (data deposit; DOI 10.5281/zenodo.XXXXXXXX — to be assigned)
+## On Zenodo (data deposit; DOI 10.5281/zenodo.20970604)
 
 This is the **data** deposit — a separate Zenodo record from the paper deposit
-(DOI `zenodo.PPPPPPPP`). Reserve this data DOI first so the paper's Data
+(DOI `zenodo.20972251`). Reserve this data DOI first so the paper's Data
 Availability statement can cite it; the code itself stays on GitHub.
 
 The reproduction bundle archived on Zenodo contains the full evidence corpus and

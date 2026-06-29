@@ -3,8 +3,8 @@
 The manuscript is **not** stored in this code repository. Its single point of
 record (SPOR) is the Zenodo manuscript deposit — cite that.
 
-- **Paper (version of record):** Zenodo DOI 10.5281/zenodo.PPPPPPPP (CC-BY-4.0).
-- **Data:** Zenodo DOI 10.5281/zenodo.XXXXXXXX (evidence corpus + artifacts).
+- **Paper (version of record):** Zenodo DOI 10.5281/zenodo.20972251 (CC-BY-4.0).
+- **Data:** Zenodo DOI 10.5281/zenodo.20970604 (evidence corpus + artifacts).
 - **Code (this repo):** <https://github.com/Ordovera/mcp-governance-study>
 - **Optional arXiv mirror:** arXiv:XXXX.XXXXX (if/when submitted).
 
