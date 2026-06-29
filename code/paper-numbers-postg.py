@@ -162,10 +162,14 @@ print(f"  annotated tools:               {ann_tools}/{src_tools_total} = "
 
 # ---- Table 4 association (recomputed) ----
 print("\n[Table 4] Association with gap presence (source-available, recomputed)")
-def assoc(label, pred):
+def assoc(label, pred, include=lambda s: True):
+    # `include` restricts the universe so a pairwise label (">10 vs 1-10",
+    # "TypeScript vs Python") compares only the two named groups, not group-vs-all.
     a = b = c = d = 0
     for i in src_idx:
         s = servers[i]
+        if not include(s):
+            continue
         has_gap = bool(gapsets[i])
         if pred(s):
             a += has_gap; b += not has_gap
@@ -180,7 +184,7 @@ def n_tools(s):
     return len(s.get("tools", []))
 def has_sens(s):
     return any(rgd.augment_tool(t)["sensitivity"] == "sensitive" for t in s.get("tools", []))
-assoc("tool count >10 vs 1-10", lambda s: n_tools(s) > 10) # note: among with-tools
+assoc("tool count >10 vs 1-10", lambda s: n_tools(s) > 10, include=lambda s: n_tools(s) >= 1)  # 1-10 excludes zero-tool servers, per the label
 assoc("has tools vs zero", lambda s: n_tools(s) > 0)
 assoc("has sensitive tools", has_sens)
 assoc("has authentication", lambda s: s.get("flags", {}).get("hasAuth"))
@@ -189,7 +193,7 @@ assoc("has authentication", lambda s: s.get("flags", {}).get("hasAuth"))
 # in the registry-present group. Excluding it understated registry-present and produced
 # a spurious "registry -> higher gaps" artifact; corrected here -> 70% vs 72%, chi2=0.3, OR=0.91 (n.s.).
 assoc("registry presence", lambda s: s.get("stratum") in ("npm+registry", "pypi+registry", "other-ecosystem"))
-assoc("TypeScript vs Python", lambda s: s.get("language") == "typescript")
+assoc("TypeScript vs Python", lambda s: s.get("language") == "typescript", include=lambda s: s.get("language") in ("typescript", "python"))
 
 # ---- 4.4 strata ----
 print("\n[4.4] Per-stratum (source-available)  N / tools/server / gap-rate")

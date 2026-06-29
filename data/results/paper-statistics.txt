@@ -1,7 +1,11 @@
 ============================================================
-PAPER STATISTICS -- canonical, regenerated 2026-06-25
+PAPER STATISTICS -- canonical, regenerated 2026-06-29
 ============================================================
 Supersedes the earlier pre-Phase-B / pre-FINAL snapshot.
+2026-06-29: Table 4 tool-count, TypeScript, and registry-presence rows corrected to
+the label-accurate pairwise computations (>10 vs 1-10 excludes zero-tool servers;
+TypeScript vs Python; registry-present includes the registry-sourced other-ecosystem
+stratum). See context/paper-revision-workplan.md, items M1 and M9.
 Sources (all re-derived, not stored):
   - paper-numbers-postg.py  : post-G corpus, re-derived gaps/indicators/sensitivity dimension
   - compute-sensitivity-scores.py : sensitivity validation against CANONICAL *-FINAL.md labels
@@ -41,12 +45,12 @@ POST-G RECONCILIATION  (N=945, source-available=760, remote=185)
   annotated tools:               592/14131 = 4.19%
 
 [Table 4] Association with gap presence (source-available, recomputed)
-  tool count >10 vs 1-10                94% vs   58%   chi2= 109.7  OR=11.50
+  tool count >10 vs 1-10                94% vs   63%   chi2=  83.4  OR= 9.35
   has tools vs zero                     76% vs   42%   chi2=  55.4  OR= 4.46
   has sensitive tools                   98% vs   66%   chi2=  50.5  OR=20.81
   has authentication                    76% vs   49%   chi2=  42.9  OR= 3.37
-  registry presence                     75% vs   68%   chi2=   5.0  OR= 1.44
-  TypeScript vs Python                  74% vs   68%   chi2=   2.8  OR= 1.31
+  registry presence                     70% vs   72%   chi2=   0.3  OR= 0.91
+  TypeScript vs Python                  74% vs   69%   chi2=   1.9  OR= 1.27
 
 [4.4] Per-stratum (source-available)  N / tools/server / gap-rate
   npm+registry       N= 181   17.9/srv  gap   76%

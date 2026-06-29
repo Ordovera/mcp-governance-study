@@ -27,13 +27,17 @@ POST-G RECONCILIATION  (N=945, source-available=760, remote=185)
   categories: confidentiality 211, autonomy 158, integrity 6
   sens-read servers lacking co-located logging: 72/93 = 77%  (abstract said 81%)
 
+[Table 2] MCP annotation adoption (PAP proxy, source-available N=760)
+  servers w/ >=1 annotated tool: 28/760 = 3.7%  (S5.1 had ~6% pilot)
+  annotated tools:               592/14131 = 4.19%
+
 [Table 4] Association with gap presence (source-available, recomputed)
-  tool count >10 vs 1-10                94% vs   58%   chi2= 109.7  OR=11.50
+  tool count >10 vs 1-10                94% vs   63%   chi2=  83.4  OR= 9.35
   has tools vs zero                     76% vs   42%   chi2=  55.4  OR= 4.46
   has sensitive tools                   98% vs   66%   chi2=  50.5  OR=20.81
   has authentication                    76% vs   49%   chi2=  42.9  OR= 3.37
-  registry presence                     75% vs   68%   chi2=   5.0  OR= 1.44
-  TypeScript vs Python                  74% vs   68%   chi2=   2.8  OR= 1.31
+  registry presence                     70% vs   72%   chi2=   0.3  OR= 0.91
+  TypeScript vs Python                  74% vs   69%   chi2=   1.9  OR= 1.27
 
 [4.4] Per-stratum (source-available)  N / tools/server / gap-rate
   npm+registry       N= 181   17.9/srv  gap   76%
